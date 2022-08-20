@@ -1,0 +1,124 @@
+﻿body {
+}
+/*Set h1 text of Contact Us styles*/
+div h1{
+    font-size: 75px;
+    text-align: center;
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    margin-top: 195px;
+    margin-left: 889px;
+}
+
+/*Set h2 text of time styles*/
+div h2 {
+    font-size: 2.5em;
+    text-align: center;
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    margin: 400px 300px;
+}
+
+/*Set big div container styles*/
+div.container {
+    background-image: url(../images/bg01.png);
+    background-position: right 0px bottom 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 750px;
+}
+
+/*Set small div styles*/
+div.first_container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 350px;
+    align-items: center;
+}
+
+/*Set fieldset styles*/
+fieldset {
+    background-image: linear-gradient(to bottom right, grey, rgb(255, 255, 255));
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 0px 40px;
+    font-size: 15px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    margin: 0px auto;
+    box-shadow: 10px 10px 5px grey;
+}
+
+/*Set fieldset of h3 text styles*/
+fieldset h3 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+/*Set fieldset hover styles*/
+fieldset:hover {
+    transform: scale(1.1, 1.1);
+}
+
+/*Set icon button styles*/
+.icon-button{
+    margin: auto;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    width: 200px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: width 1s;
+}
+
+/* Add hover effects to icon button */
+.icon-button:hover {
+    width: 270px;
+    background-color: black;
+    color: white;
+}
+
+/*Insert chart icon image in legend element*/
+legend#icon.new-icon {
+    background-image: url("");
+}
+
+/*Insert email icon image in legend element*/
+legend#icon.near-icon {
+    background-image: url("");
+}
+
+/*Insert text icon image in legend element*/
+legend#icon.best-icon {
+    background-image: url("");
+}
+
+/*Insert social icon image in legend element*/
+legend#icon.lovers-icon {
+    background-image: url("");
+}
+
+/*Set legend styles*/
+legend#icon {
+    height: 110px;
+    width: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}

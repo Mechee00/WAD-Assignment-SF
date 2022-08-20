@@ -1,0 +1,211 @@
+﻿:root {
+    --white: #ffffff;
+    --lgray: #dfdfdf;
+    --grey: #505050;
+    --dgray: #303030;
+    --black: #000000;
+    --lblue: #336cdd;
+    --blue: #0b368b;
+    --dblue: #082359;
+    --lgreen: #A6F255;
+    --green: #118B44;
+    --dgreen: #006630;
+    --lyellow: #ffe186;
+    --yellow: #ffcf3d;
+    --dyellow: #8b6900;
+    --lorange: #ffa42e;
+    --orange: #F2561D;
+    --dorange: #cc3701;
+}
+
+/* Text Color */
+.color-white {
+    color: var(--white);
+}
+
+.color-lblue {
+    color: var(--lblue);
+}
+
+.color-blue {
+    color: var(--blue);
+}
+
+.color-dblue {
+    color: var(--dblue);
+}
+
+.color-lgreen {
+    color: var(--lgreen);
+}
+
+.color-green {
+    color: var(--green);
+}
+
+.color-dgreen {
+    color: var(--dgreen);
+}
+
+.color-yellow {
+    color: var(--yellow);
+}
+
+.color-dyellow {
+    color: var(--dyellow);
+}
+
+.color-lorange {
+    color: var(--lorange);
+}
+
+.color-orange {
+    color: var(--orange);
+}
+
+.color-lgrey {
+    color: var(--lgray);
+}
+
+.color-grey {
+    color: var(--grey);
+}
+
+.color-dgrey {
+    color: var(--dgray);
+}
+
+.color-black {
+    color: var(--black);
+}
+
+/* Background */
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-lblue {
+    background-color: var(--lblue);
+}
+
+.bg-dblue {
+    background-color: var(--dblue);
+}
+
+.bg-lgreen {
+    background-color: var(--lgreen);
+}
+
+.bg-green {
+    background-color: var(--green);
+}
+
+.bg-dgreen {
+    background-color: var(--dgreen);
+}
+
+.bg-lyellow {
+    background-color: var(--lyellow);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-dyellow {
+    background-color: var(--dyellow);
+}
+
+.bg-orange {
+    background-color: var(--orange);
+}
+
+.bg-lgrey {
+    background-color: var(--lgray);
+}
+
+.bg-grey {
+    background-color: var(--grey);
+}
+
+.bg-dgrey {
+    background-color: var(--dgray);
+}
+
+/* Text Size*/
+.text-xxs {
+    font-size: xx-small;
+}
+
+.text-xs {
+    font-size: x-small;
+}
+
+.text-s {
+    font-size: small;
+}
+
+.text-m {
+    font-size: medium;
+}
+
+.text-l {
+    font-size: large;
+}
+
+.text-xl {
+    font-size: x-large;
+}
+
+.text-xxl {
+    font-size: xx-large;
+}
+
+.text-xxxl {
+    font-size: xxx-large;
+}
+
+.font-lighter {
+    font-weight: lighter;
+}
+
+.font-normal {
+    font-weight: normal;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-bolder {
+    font-weight: bolder;
+}
+
+/* Link */
+a:link {
+    color: var(--dyellow);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--dorange);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--orange);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#Menu1 {
+    float: right;
+}
