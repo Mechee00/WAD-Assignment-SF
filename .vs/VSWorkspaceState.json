@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\product"
+    "\\account",
+    "\\delivery",
+    "\\product",
+    "\\promotion",
+    "\\transaction"
   ],
-  "SelectedNode": "\\WAD Assignment SF.sln",
+  "SelectedNode": "\\transaction\\transaction.aspx",
   "PreviewInSolutionExplorer": false
 }

@@ -26,8 +26,7 @@
             </asp:ContentPlaceHolder>
         </head>
 
-        <body>
-
+        <body class="container-fuild">
             <form id="form1" runat="server">
                 <!-- Header -->
                 <header class="row" style="height: 110px;">
@@ -43,22 +42,14 @@
                         </div>
                         <!-- Left Menu -->
                         <div class="col" style="height: 80px;">
-                            <asp:Menu ID="Menu1" runat="server"
-                                class="float-end me-5 mt-3 text-center font-bold color-white"
-                                DataSourceID="SiteMapDataSource1" Orientation="Horizontal" RenderingMode="List"
-                                PathSeparator="|" StaticDisplayLevels="2" StaticEnableDefaultPopOutImage="False"
-                                Height="100px" ItemWrap="True" DisappearAfter="100">
-                                <DynamicMenuItemStyle HorizontalPadding="0px" VerticalPadding="20px" ItemSpacing="50px"
-                                    Width="180px" Height="60px" ForeColor="#8b6900" BackColor="#fee041" />
-                                <StaticMenuItemStyle HorizontalPadding="10px" VerticalPadding="10px" ItemSpacing="50px"
-                                    Width="180px" ForeColor="White" />
-                                <DynamicMenuStyle HorizontalPadding="10px" VerticalPadding="10px" Height="80px"
-                                    Width="180px" />
-                                <StaticMenuStyle HorizontalPadding="10px" VerticalPadding="10px" Height="80px"
-                                    Width="180px" />
+                            <asp:Menu ID="Menu1" runat="server" class="float-end me-5 mt-3 text-center font-bold color-white" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" RenderingMode="Default" PathSeparator="|" StaticDisplayLevels="2" StaticEnableDefaultPopOutImage="False" Height="100px" ItemWrap="false" DisappearAfter="100">
+                                <DynamicMenuItemStyle HorizontalPadding="0px" VerticalPadding="20px" ItemSpacing="50px" Width="120px" Height="60px" ForeColor="#8b6900" BackColor="#fee041" />
+                                <StaticMenuItemStyle HorizontalPadding="0px" VerticalPadding="10px" ItemSpacing="50px" Width="120px" ForeColor="White" />
+                                <DynamicMenuStyle HorizontalPadding="0px" VerticalPadding="20px" Height="80px" Width="120px" />
+                                <StaticMenuStyle HorizontalPadding="0px" VerticalPadding="20px" Height="80px" Width="120px" />
                                 <StaticHoverStyle Font-bold="True" Font-Size="Large" />
                                 <DynamicHoverStyle Font-bold="True" Font-Size="Large" />
-                              </asp:Menu>
+                            </asp:Menu>
                         </div>
                         <!-- <div class="row" id="headerBg"></div> -->
                     </div>
@@ -162,32 +153,19 @@
                         <span class="color-dgreen font-bold col-auto p-1">Follow Us On:</span>
                         <section class="col-auto">
                             <!-- Facebook -->
-                            <a class="btn btn-link btn-floating btn-sm text-dark" href="https://www.facebook.com/"
-                                role="button" data-mdb-ripple-color="dark"><i
-                                    class="bi bi-facebook color-dgreen"></i></a>
+                            <a class="btn btn-link btn-floating btn-sm text-dark" href="https://www.facebook.com/" role="button" data-mdb-ripple-color="dark"><i class="bi bi-facebook color-dgreen"></i></a>
                             <!-- Twitter -->
-                            <a class="btn btn-link btn-floating btn-sm text-dark" href="https://twitter.com/?lang=en"
-                                role="button" data-mdb-ripple-color="dark"><i
-                                    class="bi bi-twitter color-dgreen"></i></a>
+                            <a class="btn btn-link btn-floating btn-sm text-dark" href="https://twitter.com/?lang=en" role="button" data-mdb-ripple-color="dark"><i class="bi bi-twitter color-dgreen"></i></a>
                             <!-- Instagram -->
-                            <a class="btn btn-link btn-floating btn-sm text-dark" href="https://www.instagram.com/"
-                                role="button" data-mdb-ripple-color="dark"><i
-                                    class="bi bi-instagram color-dgreen"></i></a>
+                            <a class="btn btn-link btn-floating btn-sm text-dark" href="https://www.instagram.com/" role="button" data-mdb-ripple-color="dark"><i class="bi bi-instagram color-dgreen"></i></a>
                             <!-- Linkedin -->
-                            <a class="btn btn-link btn-floating btn-sm text-dark" href="https://www.linkedin.com/"
-                                role="button" data-mdb-ripple-color="dark"><i
-                                    class="bi bi-linkedin color-dgreen"></i></a>
+                            <a class="btn btn-link btn-floating btn-sm text-dark" href="https://www.linkedin.com/" role="button" data-mdb-ripple-color="dark"><i class="bi bi-linkedin color-dgreen"></i></a>
                             <!-- Whatsapp -->
-                            <a class="btn btn-link btn-floating btn-sm text-dark" href="https://www.whatsapp.com/"
-                                role="button" data-mdb-ripple-color="dark"><i
-                                    class="bi bi-whatsapp color-dgreen"></i></a>
+                            <a class="btn btn-link btn-floating btn-sm text-dark" href="https://www.whatsapp.com/" role="button" data-mdb-ripple-color="dark"><i class="bi bi-whatsapp color-dgreen"></i></a>
                             <!-- Wechat -->
-                            <a class="btn btn-link btn-floating btn-sm text-dark" href="https://www.wechat.com/"
-                                role="button" data-mdb-ripple-color="dark"><i class="bi bi-wechat color-dgreen"></i></a>
+                            <a class="btn btn-link btn-floating btn-sm text-dark" href="https://www.wechat.com/" role="button" data-mdb-ripple-color="dark"><i class="bi bi-wechat color-dgreen"></i></a>
                             <!-- Telegram -->
-                            <a class="btn btn-link btn-floating btn-sm text-dark" href="https://web.telegram.org/"
-                                role="button" data-mdb-ripple-color="dark"><i
-                                    class="bi bi-telegram color-dgreen"></i></a>
+                            <a class="btn btn-link btn-floating btn-sm text-dark" href="https://web.telegram.org/" role="button" data-mdb-ripple-color="dark"><i class="bi bi-telegram color-dgreen"></i></a>
                         </section>
                         <!-- Section: Social media -->
 

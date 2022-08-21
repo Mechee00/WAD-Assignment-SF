@@ -18,6 +18,16 @@
     --dorange: #cc3701;
 }
 
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+}
+
 /* Text Color */
 .color-white {
     color: var(--white);

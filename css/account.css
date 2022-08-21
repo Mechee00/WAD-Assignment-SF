@@ -1,5 +1,38 @@
 .bg {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.15)0%, rgba(255, 255, 255, 0)25%, rgba(255, 255, 255, 0)75%, rgba(0, 0, 0, 0.15)100%), url("../src/img/login_bg.jpg");
-    background-size: cover;
+    background-image: linear-gradient(90deg, rgba(255, 255, 0, 0.096)0%, rgba(0, 0, 0, 0.2)100%), url("../src/img/login_bg.jpg");
+    background-size: cover, cover;
     height: 600px;
+}
+
+.fb {
+    background-color: #3B5998 !important;
+    border: 0px solid transparent;
+    color: white !important;
+    width: 250px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.google {
+    background-color: #dd4b39 !important;
+    border: 0px solid transparent;
+    color: white !important;
+    width: 250px;
+    font-weight: 400;
+}
+
+.fb:hover {
+    background-color: transparent !important;
+    border: 1px solid #3B5998 !important;
+    color: #3B5998 !important;
+    font-weight: 600 !important;
+    transition: all 200ms ease !important;
+}
+
+.google:hover {
+    background-color: transparent !important;
+    border: 1px solid #dd4b39 !important;
+    color: #dd4b39 !important;
+    font-weight: 600 !important;
+    transition: all 200ms ease !important;
 }

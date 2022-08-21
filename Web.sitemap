@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
   <siteMapNode url="./home.aspx" title="Home"  description="Default home page">
+	<siteMapNode url="./product/product.aspx" title="Product" description="List all product"></siteMapNode>
   <siteMapNode url="!" title="Account" description="Account">
     <siteMapNode url="./account/signup.aspx" title="Sign Up" description="Register a new account"></siteMapNode>
     <siteMapNode url="./account/login.aspx" title="Login" description="Login to your account"></siteMapNode>
