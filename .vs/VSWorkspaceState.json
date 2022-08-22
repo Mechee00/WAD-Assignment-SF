@@ -2,11 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\account",
+    "\\Comment",
+    "\\css",
     "\\delivery",
     "\\product",
     "\\promotion",
+    "\\sell product",
+    "\\shopping cart",
     "\\transaction"
   ],
-  "SelectedNode": "\\transaction\\transaction.aspx",
+  "SelectedNode": "\\Comment\\Comment.aspx.designer.cs",
   "PreviewInSolutionExplorer": false
 }

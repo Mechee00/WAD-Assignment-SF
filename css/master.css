@@ -1,15 +1,12 @@
 form header {
-    /* background-color: red; */
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('../src/img/header_bg.jpg');
+    background-color: #ffdd00;
+    /* background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('../src/img/header_bg.jpg'); */
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2)0%, rgba(0, 0, 0, 0)100%);
+    background-size: cover, cover;
     background-position-y: 0px, -680px;
-    background-attachment: local, local;
+    /* background-attachment: cover, cover; */
     background-repeat: no-repeat;
-    background-size: cover;
     /* background-color: red; */
     height: 500px;
-    /* z-index: -999; */
-    /* max-height: 100%; */
-    /* max-width: 100%; */
-    /* width: 100%; */
 
 }

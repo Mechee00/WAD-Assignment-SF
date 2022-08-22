@@ -1,17 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
-namespace WAD_Assignment_SF.Comment
+namespace WAD_Assignment_SF.comment
 {
-    public partial class Comment : System.Web.UI.Page
+    public partial class comment : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void Cancel_Btn(object sender, EventArgs e)
+        {
+            Server.Transfer("comment.aspx");
+        }
+
+        protected void Post_Btn(object sender, EventArgs e)
+        {
+            Response.Redirect("commentList.aspx");
         }
     }
 }

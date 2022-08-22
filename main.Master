@@ -1,13 +1,10 @@
 ﻿<p%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.Master.cs" Inherits="WAD_Assignment_SF.main" %>
-
     <!DOCTYPE html>
-
     <html>
 
         <head runat="server">
             <title>Safod Malaysia</title>
             <meta name="viewport" content="width=device-width, initial-scale=1">
-
             <!-- Bootstrap css -->
             <link href="Content/bootstrap.min.css" rel="stylesheet" />
             <!-- Script -->
@@ -22,15 +19,13 @@
             <!-- Master css -->
             <link rel="stylesheet" href="css/master.css">
             <!-- Account -->
-            <asp:ContentPlaceHolder ID="head" runat="server">
-            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
         </head>
 
         <body class="container-fuild">
             <form id="form1" runat="server">
                 <!-- Header -->
                 <header class="row" style="height: 110px;">
-
                     <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
                     <div class="row">
                         <!-- Right Logo -->
@@ -51,17 +46,12 @@
                                 <DynamicHoverStyle Font-bold="True" Font-Size="Large" />
                             </asp:Menu>
                         </div>
-                        <!-- <div class="row" id="headerBg"></div> -->
                     </div>
                 </header>
-
                 <!-- Content -->
                 <div class="row" style="height: auto;">
-                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                    </asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
                 </div>
-
-
                 <!-- Footer -->
                 <footer class="row text-center pt-3 bg-lgreen">
                     <!-- Footer Content -->
@@ -72,13 +62,10 @@
                             <h6 class="text-uppercase font-bold color-dgreen p-1 ">safod</h6>
                             <hr class="mb-4 mt-0 d-inline-block mx-auto color-dgreen bg-green" style="width: 60px;">
                             <p class="color-dgreen">We are something something</p>
-
                         </div>
                         <!-- Grid column -->
-
                         <!-- Grid column -->
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-2">
-
                             <!-- Links -->
                             <h6 class="text-uppercase font-bold color-dgreen">Affiliate</h6>
                             <hr class="mb-4 mt-0 d-inline-block mx-auto color-dgreen" style="width: 60px;">
@@ -94,21 +81,18 @@
                             <p class="text-s">
                                 <a href="https://www.nestle.com.my/">Nestle</a>
                             </p>
-
                         </div>
                         <!-- Grid column -->
-
                         <!-- Grid column -->
                         <div class="col-md-3 col-lg-2 col-xl-2 mb-2">
-
                             <!-- Links -->
                             <h6 class="text-uppercase font-bold color-dgreen">About Safod</h6>
                             <hr class="mb-4 mt-0 d-inline-block mx-auto color-dgreen" style="width: 60px;">
                             <p class="text-s">
-                                <a href="about.aspx">About Us</a>
+                                <a href="about/about.aspx">About Us</a>
                             </p>
                             <p class="text-s">
-                                <a href="about.aspx">FAQ</a>
+                                <a href="about/about.aspx">FAQ</a>
                             </p>
                             <p class="text-s">
                                 <a href="#">Safod Affiliate Programme</a>
@@ -127,10 +111,8 @@
                             </p>
                         </div>
                         <!-- Grid column -->
-
                         <!-- Grid column -->
                         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 ">
-
                             <!-- Links -->
                             <h6 class="text-uppercase font-bold color-dgreen">Contact</h6>
                             <hr class="mb-4 mt-0 d-inline-block mx-auto color-dgreen" style="width: 60px;">
@@ -146,7 +128,6 @@
                         </div>
                         <!-- Grid column -->
                     </div>
-
                     <!-- Section: Social media -->
                     <div class="p-2 row justify-content-center" style="border-bottom: rgba(0,0,0,.08) solid 1px;">
                         <!-- Label -->
@@ -168,12 +149,10 @@
                             <a class="btn btn-link btn-floating btn-sm text-dark" href="https://web.telegram.org/" role="button" data-mdb-ripple-color="dark"><i class="bi bi-telegram color-dgreen"></i></a>
                         </section>
                         <!-- Section: Social media -->
-
                     </div>
                     <!-- Copyright -->
                     <div class="py-2 bg-green row">
-                        <span class="col font-normal color-whtie text-xxs">Copyright © Safod Malaysia 2022. All Rights
-                            Reserved.</span>
+                        <span class="col font-normal text-whtie text-xxs">Copyright © Safod Malaysia 2022. All Rights Reserved.</span>
                     </div>
                     <!-- Copyright -->
                 </footer>
