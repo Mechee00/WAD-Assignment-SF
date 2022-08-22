@@ -2,3 +2,6 @@ bin/WAD Assignment SF.dll
 bin/WAD Assignment SF.pdb
 .vs/WAD Assignment SF/v17/*
 obj/*
+*.vsidx
+*.vsidx
+*.sqlite
