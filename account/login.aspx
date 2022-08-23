@@ -1,9 +1,6 @@
 ﻿<%@ Page Title="SAFOD | Account" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="WAD_Assignment_SF.account.login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <!-- <script src="../js/account.js"></script> -->
     <link rel="stylesheet" href="../css/login.css">
-    <!-- <link rel="stylesheet" href="../css/global.css"> -->
-    <!-- <link rel="stylesheet" href="../Content/bootstrap.min.css"> -->
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -16,7 +13,7 @@
                     <div class="row">
                         <h1 class="col">
                             <span class="col">
-                                Sign Up
+                                Login
                             </span>
                         </h1>
                     </div>
@@ -61,8 +58,8 @@
                     <br>
                     <!-- Buttons -->
                     <div class="row p-1 btn-group-horizontal">
-                        <asp:Button class="col-6 btn mx-1 font-bold text-l py-2 mx-2 btn-success" ID="btnLogin" runat="server" CommandName="Login" Text="Log In" ValidationGroup="Login1" />
-                        <asp:Button class="col-4 btn mx-1 font-bold text-l py-2 mx-2 btn-outline-success" ID="btnSignup" runat="server" CommandName="Signup" Text="Sign Up" ValidationGroup="Signup1" OnClientClick='url("signup.aspx")' OnClick="btnSignup_Click" />
+                        <asp:Button class="col-6 btn font-bold text-l py-2 mx-2 btn-success" ID="btnLogin" runat="server" CommandName="Login" Text="Log In" ValidationGroup="Login1" />
+                        <asp:Button class="col-4 btn font-bold text-l py-2 mx-2 btn-outline-success" ID="btnSignup" runat="server" CommandName="Signup" Text="Sign Up" ValidationGroup="Signup1" OnClientClick='url("signup.aspx")' OnClick="btnSignup_Click" />
                     </div>
                 </LayoutTemplate>
             </asp:Login>
@@ -85,4 +82,5 @@
             </h4>
         </div>
     </div>
+    <div class="px-4"></div>
 </asp:Content>

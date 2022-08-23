@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about\faq.aspx" />
+    <Content Include="account\acc_update.aspx" />
     <Content Include="account\login.aspx" />
     <Content Include="account\seller.aspx" />
     <Content Include="account\signup.aspx" />
@@ -90,6 +91,7 @@
     <Content Include="css\account.css" />
     <Content Include="css\comment.css" />
     <Content Include="css\delivery.css" />
+    <Content Include="css\faq.css" />
     <Content Include="css\global.css" />
     <Content Include="css\login.css" />
     <Content Include="css\master.css" />
@@ -110,7 +112,11 @@
     <Content Include="shopping cart\ShoppingCart.aspx" />
     <Content Include="src\caret-down.svg" />
     <Content Include="src\img\delivery.jpg" />
+    <Content Include="src\img\faq_bg.jpg" />
+    <Content Include="src\img\footer_bg.svg" />
     <Content Include="src\img\header_bg.jpg" />
+    <Content Include="src\img\login_bg.jpg" />
+    <Content Include="src\img\register_bg.jpg" />
     <Content Include="src\logo\favicon.svg" />
     <Content Include="transaction\transaction.aspx" />
     <Content Include="transaction\transactiondetails.aspx" />
@@ -123,6 +129,13 @@
     </Compile>
     <Compile Include="about\faq.aspx.designer.cs">
       <DependentUpon>faq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="account\acc_update.aspx.cs">
+      <DependentUpon>acc_update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="account\acc_update.aspx.designer.cs">
+      <DependentUpon>acc_update.aspx</DependentUpon>
     </Compile>
     <Compile Include="account\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
