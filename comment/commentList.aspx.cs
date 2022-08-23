@@ -13,5 +13,15 @@ namespace WAD_Assignment_SF.Comment
         {
 
         }
+
+        protected void Comment_Btn(object sender, EventArgs e)
+        {
+            Response.Redirect("comment.aspx");
+        }
+
+        protected void Return_Btn(object sender, EventArgs e)
+        {
+            Response.Redirect("ProductDetails.aspx");
+        }
     }
 }

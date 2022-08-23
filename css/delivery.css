@@ -1,9 +1,5 @@
 ﻿.bg {
 	background-image: linear-gradient(90deg, rgba(255, 255, 0, 0.096)0%, rgba(0, 0, 0, 0.2)100%), url("../src/img/delivery.jpg");
 	background-size: cover;
-	height: 600px;
-}
-
-.container {
-	padding-left: 825px;
+	height: 1000px;
 }

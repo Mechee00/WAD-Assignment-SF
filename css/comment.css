@@ -10,3 +10,9 @@ input[type="radio"] {
     transform: scale(1.5);
     margin: 10px;
 }
+
+.table {
+    --bs-table-color: var(--bs-grey-600);
+    --bs-table-bg: var(--bs-gray-100);
+    --bs-table-border-color: transparent;
+}

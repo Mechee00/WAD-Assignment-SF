@@ -1,0 +1,12 @@
+﻿.bg {
+	background: rgb(254,224,124);
+	background: linear-gradient(42deg, rgba(254,224,124,1) 0%, rgba(119,255,251,1) 25%, rgba(250,255,119,1) 50%, rgba(103,255,187,1) 75%, rgba(255,138,160,1) 100%);
+	background-size: cover;
+	height: 400px;
+}
+
+.fixed {
+	background: rgb(0,0,0);
+	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(92,80,105,1) 35%);
+	color: greenyellow;
+}

@@ -7,15 +7,15 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="row bg align-items-center" style="padding-left: 350px">
         <div class="row" style="padding-top: 50px">
-            <h1 class="col">
+            <h1 class="col" style="font-size:60px">
                 <span class="col">
-                    Leave Comment
+                    Leave a Comment
                 </span>
             </h1>
         </div>
         <br />
         <div class="row">
-            <h4 class="col">
+            <h4 class="col" style="font-size:30px;">
                 <asp:Label ID="Label2" runat="server" Text="Rating"></asp:Label>
             </h4>
         </div>
@@ -33,21 +33,21 @@
         </div>
         <br />
         <div class="row">
-            <h4 class="col">
+            <h4 class="col" style="font-size:30px;">
                 <asp:Label ID="Label1" runat="server" Text="Comment"></asp:Label>
             </h4>
         </div>
         <br />
         <div class="row">
             <h6 class="col">
-                <asp:TextBox ID="TextBox1" runat="server" Width="700px" Height="150px"></asp:TextBox>
+                <asp:TextBox ID="TextBox1" runat="server" Width="700px" Height="150px" TextMode="MultiLine" style="resize:none; background-color:antiquewhite"></asp:TextBox>
             </h6>
         </div>
         <br />
         <div class="row">
             <h4 class="col">
-                <asp:Button ID="cancelBtn" runat="server" Text="Cancel" OnClick="Cancel_Btn" />
-                <asp:Button ID="PostBtn" runat="server" Text="Post Comment" OnClick="Post_Btn" />
+                <asp:Button class="col-2 btn mx-auto font-bold text-l py-2 mx-2 btn-warning" ID="cancelBtn" runat="server" Text="Cancel" OnClick="Cancel_Btn" />
+                <asp:Button class="col-2 btn mx-auto font-bold text-l py-2 mx-2 btn-success" ID="PostBtn" runat="server" Text="Post Comment" OnClick="Post_Btn" />
             </h4>
         </div>
     </div>

@@ -15,31 +15,76 @@ namespace WAD_Assignment_SF.delivery
     {
 
         /// <summary>
-        /// AddressLabel control.
+        /// unitlbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label AddressLabel;
+        protected global::System.Web.UI.WebControls.Label unitlbl;
 
         /// <summary>
-        /// AddressTB control.
+        /// unittb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox AddressTB;
+        protected global::System.Web.UI.WebControls.TextBox unittb;
 
         /// <summary>
-        /// AddressRequired control.
+        /// UnitRequired control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator AddressRequired;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator UnitRequired;
+
+        /// <summary>
+        /// buildinglbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label buildinglbl;
+
+        /// <summary>
+        /// buildingtb control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox buildingtb;
+
+        /// <summary>
+        /// streetlbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label streetlbl;
+
+        /// <summary>
+        /// streettb control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox streettb;
+
+        /// <summary>
+        /// StreetRequired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator StreetRequired;
 
         /// <summary>
         /// PostalCodeLabel control.

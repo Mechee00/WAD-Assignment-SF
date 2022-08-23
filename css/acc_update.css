@@ -1,0 +1,6 @@
+.bg {
+    /* background-color: var(#ffe186); */
+    background-image: url(../src/img/header_bg.jpg);
+    /* background-color: var(--lgray); */
+    height: 1400px;
+}

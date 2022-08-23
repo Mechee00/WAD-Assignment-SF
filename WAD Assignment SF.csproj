@@ -70,6 +70,10 @@
     <Content Include="account\login.aspx" />
     <Content Include="account\seller.aspx" />
     <Content Include="account\signup.aspx" />
+    <Content Include="App_Data\product.mdf" />
+    <Content Include="App_Data\product_log.ldf">
+      <DependentUpon>product.mdf</DependentUpon>
+    </Content>
     <Content Include="comment\comment.aspx" />
     <Content Include="comment\commentList.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -88,20 +92,25 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
-    <Content Include="css\account.css" />
+    <Content Include="css\acc_update.css" />
     <Content Include="css\comment.css" />
     <Content Include="css\delivery.css" />
     <Content Include="css\faq.css" />
     <Content Include="css\global.css" />
     <Content Include="css\login.css" />
     <Content Include="css\master.css" />
+    <Content Include="css\payment.css" />
+    <Content Include="css\promotion.css" />
     <Content Include="css\signup.css" />
+    <Content Include="css\transaction.css" />
     <Content Include="delivery\delivery.aspx" />
     <Content Include="delivery\deliverydetails.aspx" />
+    <Content Include="delivery\deliverylist.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="help.aspx" />
     <Content Include="home.aspx" />
-    <Content Include="js\account.js" />
     <Content Include="product\ProductDetails.aspx" />
+    <Content Include="product\ProductList.aspx" />
     <Content Include="promotion\promotion.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -109,15 +118,23 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="sell product\InsertProduct.aspx" />
     <Content Include="shopping cart\ShoppingCart.aspx" />
     <Content Include="src\caret-down.svg" />
+    <Content Include="src\img\1-Cheese-Stick.jpg" />
+    <Content Include="src\img\10-Curry-Chicken-Pie.jpg" />
+    <Content Include="src\img\2-Coffee-Mexico.jpg" />
+    <Content Include="src\img\3-Kaya-Bun.jpg" />
+    <Content Include="src\img\4-Doughnut.jpg" />
+    <Content Include="src\img\5-Mini-Croissant.jpeg" />
+    <Content Include="src\img\6-Little-Pizza.jpg" />
+    <Content Include="src\img\7-Hot-Dog.jpg" />
     <Content Include="src\img\delivery.jpg" />
-    <Content Include="src\img\faq_bg.jpg" />
-    <Content Include="src\img\footer_bg.svg" />
     <Content Include="src\img\header_bg.jpg" />
-    <Content Include="src\img\login_bg.jpg" />
-    <Content Include="src\img\register_bg.jpg" />
+    <Content Include="src\img\paymentmethod.png" />
+    <Content Include="src\img\product_bg.jpg" />
     <Content Include="src\logo\favicon.svg" />
+    <Content Include="transaction\payment.aspx" />
     <Content Include="transaction\transaction.aspx" />
     <Content Include="transaction\transactiondetails.aspx" />
     <Content Include="Web.config" />
@@ -186,6 +203,16 @@
     <Compile Include="delivery\deliverydetails.aspx.designer.cs">
       <DependentUpon>deliverydetails.aspx</DependentUpon>
     </Compile>
+    <Compile Include="delivery\deliverylist.aspx.cs">
+      <DependentUpon>deliverylist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="delivery\deliverylist.aspx.designer.cs">
+      <DependentUpon>deliverylist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="help.aspx.cs">
       <DependentUpon>help.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -214,6 +241,13 @@
     <Compile Include="product\ProductDetails.aspx.designer.cs">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
     </Compile>
+    <Compile Include="product\ProductList.aspx.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="product\ProductList.aspx.designer.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="promotion\promotion.aspx.cs">
       <DependentUpon>promotion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -222,12 +256,26 @@
       <DependentUpon>promotion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sell product\InsertProduct.aspx.cs">
+      <DependentUpon>InsertProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sell product\InsertProduct.aspx.designer.cs">
+      <DependentUpon>InsertProduct.aspx</DependentUpon>
+    </Compile>
     <Compile Include="shopping cart\ShoppingCart.aspx.cs">
       <DependentUpon>ShoppingCart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="shopping cart\ShoppingCart.aspx.designer.cs">
       <DependentUpon>ShoppingCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="transaction\payment.aspx.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transaction\payment.aspx.designer.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
     </Compile>
     <Compile Include="transaction\transaction.aspx.cs">
       <DependentUpon>transaction.aspx</DependentUpon>
@@ -277,7 +325,9 @@
     </None>
     <Content Include="Web.sitemap" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="js\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

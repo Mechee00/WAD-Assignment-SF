@@ -11,7 +11,7 @@ namespace WAD_Assignment_SF.comment
 
         protected void Cancel_Btn(object sender, EventArgs e)
         {
-            Server.Transfer("comment.aspx");
+            Response.Redirect("commentList.aspx");
         }
 
         protected void Post_Btn(object sender, EventArgs e)
