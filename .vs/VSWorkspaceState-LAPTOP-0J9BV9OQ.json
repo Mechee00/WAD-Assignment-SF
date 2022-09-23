@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\comment",
+    "\\delivery",
+    "\\product",
+    "\\promotion",
+    "\\sell product",
+    "\\shopping cart",
+    "\\transaction"
+  ],
+  "SelectedNode": "\\shopping cart\\ShoppingCart.aspx",
+  "PreviewInSolutionExplorer": false
+}

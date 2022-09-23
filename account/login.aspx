@@ -12,9 +12,7 @@
                     <!-- Title -->
                     <div class="row">
                         <h1 class="col">
-                            <span class="col">
-                                Login
-                            </span>
+                            Login
                         </h1>
                     </div>
                     <br>

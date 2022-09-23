@@ -1,43 +1,3 @@
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\WAD Assignment SF.dll.config
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\WAD Assignment SF.dll
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\WAD Assignment SF.pdb
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\csc.exe
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\csc.exe.config
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\csc.rsp
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\csi.exe
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\csi.exe.config
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\csi.rsp
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Buffers.dll
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Memory.dll
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Numerics.Vectors.dll
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Threading.Tasks.Extensions.dll
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\vbc.exe
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\vbc.exe.config
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\vbc.rsp
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\VBCSCompiler.exe
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\obj\Debug\WAD Assignment SF.csproj.AssemblyReference.cache
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\obj\Debug\WAD Assignment SF.csproj.CoreCompileInputs.cache
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\obj\Debug\WAD Assignment SF.csproj.CopyComplete
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\obj\Debug\WAD Assignment SF.dll
-C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\obj\Debug\WAD Assignment SF.pdb
 C:\Users\Wolfy_KL\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\WAD Assignment SF.dll.config
 C:\Users\Wolfy_KL\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\WAD Assignment SF.dll
 C:\Users\Wolfy_KL\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\WAD Assignment SF.pdb
@@ -78,43 +38,83 @@ C:\Users\Wolfy_KL\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2
 C:\Users\Wolfy_KL\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\obj\Debug\WAD Assignment SF.csproj.CopyComplete
 C:\Users\Wolfy_KL\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\obj\Debug\WAD Assignment SF.dll
 C:\Users\Wolfy_KL\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\obj\Debug\WAD Assignment SF.pdb
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\WAD Assignment SF.dll.config
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\WAD Assignment SF.dll
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\WAD Assignment SF.pdb
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\csc.exe
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\csc.exe.config
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\csc.rsp
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\csi.exe
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\csi.exe.config
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\csi.rsp
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.Managed.Core.targets
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Buffers.dll
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Collections.Immutable.dll
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Memory.dll
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Numerics.Vectors.dll
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Reflection.Metadata.dll
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Threading.Tasks.Extensions.dll
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\vbc.exe
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\vbc.exe.config
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\vbc.rsp
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\VBCSCompiler.exe
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\VBCSCompiler.exe.config
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\obj\Debug\WAD Assignment SF.csproj.AssemblyReference.cache
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\obj\Debug\WAD Assignment SF.csproj.CoreCompileInputs.cache
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\obj\Debug\WAD Assignment SF.csproj.CopyComplete
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\obj\Debug\WAD Assignment SF.dll
-D:\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\obj\Debug\WAD Assignment SF.pdb
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\WAD Assignment SF.dll.config
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\WAD Assignment SF.dll
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\WAD Assignment SF.pdb
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\csc.exe
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\csc.exe.config
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\csc.rsp
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\csi.exe
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\csi.exe.config
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\csi.rsp
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Buffers.dll
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Memory.dll
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\vbc.exe
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\vbc.exe.config
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\vbc.rsp
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\VBCSCompiler.exe
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\obj\Debug\WAD Assignment SF.csproj.AssemblyReference.cache
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\obj\Debug\WAD Assignment SF.csproj.CoreCompileInputs.cache
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\obj\Debug\WAD Assignment SF.csproj.CopyComplete
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\obj\Debug\WAD Assignment SF.dll
+C:\Users\User\mechee\Number 3 + 1 - S4 - WAD ( BAIT2113 ) - S4 - WAD ( BAIT2113 )\WAD Assignment SF\obj\Debug\WAD Assignment SF.pdb
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\WAD Assignment SF.dll.config
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\WAD Assignment SF.dll
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\WAD Assignment SF.pdb
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\csc.exe
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\csc.exe.config
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\csc.rsp
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\csi.exe
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\csi.exe.config
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\csi.rsp
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\System.Buffers.dll
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\System.Memory.dll
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\vbc.exe
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\vbc.exe.config
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\vbc.rsp
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\VBCSCompiler.exe
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\obj\Debug\WAD Assignment SF.csproj.AssemblyReference.cache
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\obj\Debug\WAD Assignment SF.csproj.CoreCompileInputs.cache
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\obj\Debug\WAD Assignment SF.csproj.CopyComplete
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\obj\Debug\WAD Assignment SF.dll
+C:\Users\Cheah Pin Chee\OneDrive - mechee\Projects ( Ongoing  )\WAD Assignment SF\obj\Debug\WAD Assignment SF.pdb

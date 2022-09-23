@@ -23,30 +23,28 @@
             <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
         </head>
 
-        <body class="container-fuild">
+        <body class="">
             <form id="form1" runat="server">
                 <!-- Header -->
-                <header class="row" style="height: 110px;">
-                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
-                    <div class="row">
+                <header class="bg-dgreen">
+                    <div class="d-flex flex-row align-self-center mx-auto" style="width: 1920px;">
+                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
                         <!-- Right Logo -->
-                        <div class="col color-white font-bold ">
-                            <a href="home.aspx" class="float-start mt-3 ms-5 col-auto">
-                                <img src="../src/logo/logo_white.svg" alt="Safod logo" style="height: 64px;">
-                            </a>
-                            <h1 class="col font-bold mt-4 ms-3 float-start" style="height: 80px;">SAFOD Malaysia</h1>
-                        </div>
+                        <!-- <a href="home.aspx" class="my-auto mt-3 ms-5"> -->
+                        <a href="home.aspx" class="my-auto ms-5">
+                            <img src="../src/logo/logo_white.svg" alt="Safod logo" style="height: 64px;">
+                        </a>
+                        <h1 class="font-bold text-white my-auto ms-5">SAFOD Malaysia</h1>
                         <!-- Left Menu -->
-                        <div class="col" style="height: 80px;">
-                            <asp:Menu ID="Menu1" runat="server" class="float-end me-5 mt-3 text-center font-bold color-white" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" RenderingMode="Default" PathSeparator="|" StaticDisplayLevels="2" StaticEnableDefaultPopOutImage="False" Height="100px" ItemWrap="false" DisappearAfter="100">
-                                <DynamicMenuItemStyle HorizontalPadding="0px" VerticalPadding="20px" ItemSpacing="50px" Width="120px" Height="60px" ForeColor="#8b6900" BackColor="#fee041" />
-                                <StaticMenuItemStyle HorizontalPadding="0px" VerticalPadding="10px" ItemSpacing="50px" Width="120px" ForeColor="White" />
-                                <DynamicMenuStyle HorizontalPadding="0px" VerticalPadding="20px" Height="80px" Width="120px" />
-                                <StaticMenuStyle HorizontalPadding="0px" VerticalPadding="20px" Height="80px" Width="120px" />
-                                <StaticHoverStyle Font-bold="True" Font-Size="Large" />
-                                <DynamicHoverStyle Font-bold="True" Font-Size="Large" />
-                            </asp:Menu>
-                        </div>
+                        <!-- <div class="col" style="height: 80px;"> -->
+                        <asp:Menu ID="Menu1" runat="server" class="ms-auto p-3 text-center font-bold text-white" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" RenderingMode="Default" PathSeparator="|" StaticDisplayLevels="2" StaticEnableDefaultPopOutImage="False" Height="110px" ItemWrap="false" DisappearAfter="100">
+                            <DynamicMenuItemStyle HorizontalPadding="0px" VerticalPadding="20px" ItemSpacing="150px" Width="180px" Height="80px" ForeColor="#006630" BackColor="White" Font-Size="Larger" />
+                            <StaticMenuItemStyle HorizontalPadding="0px" VerticalPadding="10px" ItemSpacing="150px" Width="150px" ForeColor="White" Font-Size="Larger" />
+                            <DynamicMenuStyle HorizontalPadding="0px" VerticalPadding="20px" Height="80px" Width="120px" />
+                            <StaticMenuStyle HorizontalPadding="0px" VerticalPadding="20px" Height="80px" Width="120px" />
+                            <StaticHoverStyle Font-bold="True" Font-Size="X-Large" />
+                            <DynamicHoverStyle Font-bold="True" Font-Size="X-Large" />
+                        </asp:Menu>
                     </div>
                 </header>
                 <!-- Content -->

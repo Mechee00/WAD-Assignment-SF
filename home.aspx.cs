@@ -8,5 +8,10 @@ namespace WAD_Assignment_SF
         {
 
         }
+
+        protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -24,5 +24,10 @@ namespace WAD_Assignment_SF.shopping_cart
         {
 
         }
+
+        protected void btnBack_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ProductDetails.aspx");
+        }
     }
 }

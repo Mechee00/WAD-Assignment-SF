@@ -15,13 +15,13 @@ namespace WAD_Assignment_SF.shopping_cart
     {
 
         /// <summary>
-        /// ShoppingCartTitle control.
+        /// btnBack control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ShoppingCartTitle;
+        protected global::System.Web.UI.WebControls.Button btnBack;
 
         /// <summary>
         /// SqlDataSource1 control.
@@ -51,6 +51,15 @@ namespace WAD_Assignment_SF.shopping_cart
         protected global::System.Web.UI.WebControls.Label totalAmount;
 
         /// <summary>
+        /// btnRemove control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnRemove;
+
+        /// <summary>
         /// btnCheckOut control.
         /// </summary>
         /// <remarks>
@@ -58,14 +67,5 @@ namespace WAD_Assignment_SF.shopping_cart
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnCheckOut;
-
-        /// <summary>
-        /// btnBack control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBack;
     }
 }

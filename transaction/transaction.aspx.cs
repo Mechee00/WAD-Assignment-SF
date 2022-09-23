@@ -9,9 +9,9 @@ namespace WAD_Assignment_SF.transaction
 
         }
 
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        protected void returnbtn_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/home.aspx");
         }
     }
 }

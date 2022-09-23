@@ -71,8 +71,8 @@
             <br />
             <div class ="row">
                 <h3 class ="col">
-                    <asp:Button ID="confirmbtn" class="col-3 btn mx-auto font-bold text-l py-2 mx-2 btn-primary" runat="server" Text="Confirm"/>
-                    <asp:Button ID="cancelbtn" class="col-3 btn mx-auto font-bold text-l py-2 mx-2 btn-warning" runat="server" Text="Cancel"  OnClientClick='return confirm("Are you sure you want to quit payment?")' />
+                    <asp:Button ID="confirmbtn" class="col-3 btn mx-auto font-bold text-l py-2 mx-2 btn-primary" runat="server" Text="Confirm" OnClick="confirmbtn_Click" />
+                    <asp:Button ID="cancelbtn" class="col-3 btn mx-auto font-bold text-l py-2 mx-2 btn-warning" runat="server" Text="Cancel"  OnClick="cancelbtn_Click" OnClientClick='return confirm("Are you sure you want to quit payment?")' />
                 </h3>
             </div>
         </div>

@@ -16,7 +16,7 @@ namespace WAD_Assignment_SF.delivery
 
         protected void cancelbtn_Click(object sender, EventArgs e)
         {
-            Server.Transfer("delivery.aspx");
+            Server.Transfer("~/shopping cart/ShoppingCart.aspx");
         }
     }
 }

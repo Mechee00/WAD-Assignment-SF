@@ -61,8 +61,8 @@
         </div>
             <br />
         <div class="row">
-            <asp:Button ID="confirmbtn" class="col-2 btn mx-2 font-bold text-l py-2 mx-2 btn-primary" runat="server" Text="Confirm"  OnClientClick='return confirm("Please make sure your address is correct before sending")' />
-            <asp:Button ID="cancelbtn" class="col-2 btn mx-2 font-bold text-l py-2 mx-2 btn-danger" runat="server" Text="Cancel" OnClick="cancelbtn_Click" />
+            <asp:Button ID="confirmbtn" class="col-2 btn mx-2 font-bold text-l py-2 mx-2 btn-primary" runat="server" Text="Confirm" OnClick="confirmbtn_Click" OnClientClick='return confirm("Please make sure your address is correct before sending")' />
+            <asp:Button ID="cancelbtn" class="col-2 btn mx-2 font-bold text-l py-2 mx-2 btn-danger" runat="server" Text="Cancel" OnClick="cancelbtn_Click" OnClientClick='return confirm("Are you sure you want to leave this page?")' />
         </div>
             </div>
     </div>

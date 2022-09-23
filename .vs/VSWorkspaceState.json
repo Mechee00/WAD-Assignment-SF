@@ -2,7 +2,6 @@
   "ExpandedNodes": [
     "",
     "\\account",
-    "\\Comment",
     "\\css",
     "\\delivery",
     "\\product",
@@ -11,6 +10,6 @@
     "\\shopping cart",
     "\\transaction"
   ],
-  "SelectedNode": "\\Comment\\Comment.aspx.designer.cs",
+  "SelectedNode": "\\WAD Assignment SF.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -13,5 +13,10 @@ namespace WAD_Assignment_SF.delivery
         {
             Response.Redirect("delivery.aspx");
         }
+
+        protected void confirmbtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/transaction/payment.aspx");
+        }
     }
 }

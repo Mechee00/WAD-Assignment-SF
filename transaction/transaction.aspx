@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-- Title -->
-        <div class="row bg align-items-center ps-5" style="padding-left:250px; padding-right:250px;">
+        <div class="row bg align-items-center ps-5" style="padding-left:250px; padding-right:250px; height:600px;">
     <div class="row" >
         <h1 class="col">
             <span class="col">
@@ -75,10 +75,111 @@
                         <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/transaction/transactiondetails.aspx">Check Details</asp:HyperLink>
                     </asp:TableCell>
                 </asp:TableRow>
+                <asp:TableRow runat="server">
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label14" runat="server" Text="30/8/2022"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label15" runat="server" Text="-RM 19.40"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label16" runat="server" Text="Success"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/transaction/transactiondetails.aspx">Check Details</asp:HyperLink>
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow runat="server">
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label17" runat="server" Text="30/8/2022"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label18" runat="server" Text="-RM 23.80"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label19" runat="server" Text="Success"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/transaction/transactiondetails.aspx">Check Details</asp:HyperLink>
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow runat="server">
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label20" runat="server" Text="31/8/2022"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label21" runat="server" Text="-RM 15.30"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label22" runat="server" Text="Pending"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/transaction/transactiondetails.aspx">Check Details</asp:HyperLink>
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow runat="server">
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label23" runat="server" Text="30/8/2022"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label24" runat="server" Text="-RM 19.40"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label25" runat="server" Text="Success"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/transaction/transactiondetails.aspx">Check Details</asp:HyperLink>
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow runat="server">
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label26" runat="server" Text="30/8/2022"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label27" runat="server" Text="-RM 23.80"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label28" runat="server" Text="Success"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/transaction/transactiondetails.aspx">Check Details</asp:HyperLink>
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow runat="server">
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label29" runat="server" Text="31/8/2022"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label30" runat="server" Text="-RM 15.30"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label31" runat="server" Text="Pending"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/transaction/transactiondetails.aspx">Check Details</asp:HyperLink>
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow runat="server">
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label32" runat="server" Text="31/8/2022"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label33" runat="server" Text="-RM 15.30"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:Label ID="Label34" runat="server" Text="Pending"></asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server">
+                        <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/transaction/transactiondetails.aspx">Check Details</asp:HyperLink>
+                    </asp:TableCell>
+                </asp:TableRow>
             </asp:Table>
+            <div class="row">
+            <asp:Button class="col-1" ID="Button3" runat="server" Text="1" /><asp:Button class="col-1" ID="Button4" runat="server" Text="2" />
+            </div>
             <br />
             <div class="row">
-                <asp:Button ID="returnbtn" class="col-2 btn mx-2 font-bold text-l py-2 mx-2 btn-warning" runat="server" Text="Return" />
+                <asp:Button ID="returnbtn" class="col-2 btn mx-2 font-bold text-l py-2 mx-2 btn-warning" runat="server" Text="Return" OnClick="returnbtn_Click" />
             </div>
         </div>
             </div>

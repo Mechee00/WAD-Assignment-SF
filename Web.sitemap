@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
   <siteMapNode url="./home.aspx" title="Home"  description="Default home page">
-	<siteMapNode url="./product/ProductList.aspx" title="Product" description="List all product"></siteMapNode>
+	<siteMapNode url="./shopping_cart/ShoppingCart.aspx" title="Shopping Cart" description="Add products to shopping cart"></siteMapNode>
   <siteMapNode url="account/acc_update.aspx" title="Account" description="Account">
     <siteMapNode url="./account/login.aspx" title="Login" description="Login to your account"></siteMapNode>
     <siteMapNode url="./account/signup.aspx" title="Sign Up" description="Register a new account"></siteMapNode>
@@ -10,5 +10,4 @@
   <siteMapNode url="./help.aspx" title="Customer Care" description="Contact us for help" />
   <siteMapNode url="" title="About Us" description="Learn more about our mission!" />
 </siteMapNode>
-  
 </siteMap>

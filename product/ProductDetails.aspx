@@ -1,8 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="ProductDetails.aspx.cs" Inherits="WAD_Assignment_SF.product.ProductDetails" %>
+﻿<%@ Page Title="SAFOD | Product Details" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="ProductDetails.aspx.cs" Inherits="WAD_Assignment_SF.product.ProductDetails" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         body{
-            background-image:linear-gradient(180deg, rgba(255, 255, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%), url("../src/img/product_bg.jpg");
+            background-image:linear-gradient(180deg, rgba(255, 255, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%), url("../src/img/product_bg1.jpg");
             background-position: center;
         }
         td {
@@ -11,23 +12,28 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    
     <div class="row justify-content-center">
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Product]"></asp:SqlDataSource>
-        <asp:FormView ID="fvProduct" runat="server" DataKeyNames="productId" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" Height="520px" OnPageIndexChanging="FormView1_PageIndexChanging" Width="1200px" BackColor="#CCCCCC">
+        <asp:FormView ID="fvProduct" runat="server" DataKeyNames="productId" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" Height="520px" Width="1200px" BackColor="#CCCCCC">
             <EditRowStyle BackColor="#999999" />
             <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
             <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
             <ItemTemplate>
                 <table class="row justify-content-center">
                     <tr>
-                        <td style="font-size:larger"><strong>Product Name :
+                        <td style="font-size:xx-large"><strong>Product Name :</strong>
                             <asp:Label ID="lblProductName" runat="server" Text='<%# Eval("productName") %>'></asp:Label>
-                        </strong>
+                        </td>
+                        <td></td>
+                        <td>
+                            <asp:Button ID="btnBack" runat="server" class="btn font-bold text-l btn-danger" style="width:200px" Text="Back"/>
                         </td>
                     </tr>
                     <tr>
                         <td rowspan="6">
-                            <asp:Image ID="imgProductImage" runat="server" Height="431px" ImageUrl='<%# Eval("productImage") %>' style="border-style: solid; border-color: inherit; border-width: medium;" Width="576px" />
+                            <!--<asp:Image ID="imgProductImage" runat="server" Height="431px" ImageUrl='<%# Eval("productImage") %>' style="border-style: solid; border-color: inherit; border-width: medium;" Width="576px" />-->
+                            <asp:Image ImageUrl="../src/img/1-Cheese-Stick.jpg" Height="431px" style="border-style: solid; border-color: inherit; border-width: medium;" Width="576px" runat="server" />
                         </td>
                         <td colspan="2"><strong>Product ID :</strong>
                             <asp:Label ID="lblProductID" runat="server" Text='<%# Eval("productId") %>'></asp:Label>
@@ -45,16 +51,17 @@
                     </tr>
                     <tr>
                         <td colspan="2"><strong>Price :</strong> RM
-                            <asp:Label ID="lblProductPrice" runat="server" Text='<%# Eval("ProductPrice") %>'></asp:Label>
+                            <asp:Label ID="lblProductPrice" runat="server" Text='<%# Eval("ProductPrice", "{0:N2}") %>'></asp:Label>
                         </td>
                         
                     </tr>
                     <tr>
                         <td>
-                            <asp:Button ID="btnRating" runat="server" class="btn btn-warning" style="width:200px" Text="Rating" />
+                            <asp:Button ID="btnRating" runat="server" class="btn font-bold text-l btn-warning" style="width:200px" Text="Rating" />
                         </td>
                         <td>
-                            <asp:Button ID="btnShoppingCart" runat="server" class="btn btn-success" style="width:200px" Text="Add to Cart" />
+                            <asp:Button ID="btnShoppingCart" runat="server" class="btn font-bold text-l btn-success" style="width:200px" 
+                                OnClientClick="return confirm('Add Successful! The product already add to shopping cart~');" Text="Add to Cart" />
                         </td>
                     </tr>
                 </table>

@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="row bg align-items-center ps-5">
-        <div class="col-auto" style="padding-left: 825px; padding-right: 50px;">
+        <div class="col-auto" style="padding-left: 700px; padding-right: 50px;">
             <div class="bg-lgreen">
             <!-- Title -->
             <div class="row color-dgreen">
@@ -79,7 +79,7 @@
             <!-- State -->
             <div class="row color-dgreen">
                 <h5 class="col">
-                    <asp:Label ID="StateLabel" runat="server" AssociatedControlID="StateTB" Text="Postal Code :"></asp:Label>
+                    <asp:Label ID="StateLabel" runat="server" AssociatedControlID="StateTB" Text="State :"></asp:Label>
                 </h5>
             </div>
             <div class="row">
@@ -106,7 +106,7 @@
                 </h4>
             </div>
             <!-- Confirm Address Button -->
-            <div class ="row">
+            <div class ="row justify-content-end">
                 <h3 class ="col">
                     <asp:Button ID="confirmbtn" class="col-5 btn mx-auto font-bold text-l py-2 mx-2 btn-primary" runat="server" Text="Confirm Address" OnClick="confirmbtn_Click" />
                     <asp:Button ID="cancelbtn" class="col-3 btn mx-auto font-bold text-l py-2 mx-2 btn-danger" runat="server" Text="Cancel" OnClick="cancelbtn_Click" OnClientClick='return confirm("Are you sure you want to leave this page?")' />
