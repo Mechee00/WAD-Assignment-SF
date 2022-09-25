@@ -64,8 +64,8 @@ namespace WAD_Assignment_SF.account
                 if (dr.Read())
                 {
                     usr.type = "customer";
+                    usr.email = txtEmail.Text;
                     usr.userID = Convert.ToInt32(dr["custID"]);
-
                     usr.accID = Convert.ToInt32(dr["accID"]);
                     usr.accName = dr["accUserName"].ToString();
                     Session["user"] = usr;
@@ -78,6 +78,7 @@ namespace WAD_Assignment_SF.account
                     if (dr.Read())
                     {
                         usr.type = "seller";
+                        usr.email = txtEmail.Text;
                         usr.userID = Convert.ToInt32(dr["sellerID"]);
 
                         usr.accID = Convert.ToInt32(dr["accID"]);
