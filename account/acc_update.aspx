@@ -37,25 +37,27 @@
                             <asp:Label class="row" ID="lblContact" runat="server" Text="Contact"></asp:Label>
                             <asp:TextBox class="row-9 rounded" ID="txtContact" runat="server" Width="320px"></asp:TextBox>
                             <asp:RequiredFieldValidator class="col-1 p-0 text-danger" ID="vldtContact" runat="server" ControlToValidate="txtContact" ErrorMessage="Cotact Number is required." ToolTip="Contact without '-'" ValidationGroup="updateProfile" Font-Bold="True">*</asp:RequiredFieldValidator>
+                            <asp:RegularExpressionValidator runat="server" ControlToValidate="txtContact" ValidationExpression="(^[0-9]{10,11}$)" ErrorMessage="Invalid Contact Number Format! Don't include the prefix '+6' and enter withotu '-' " ValidationGroup="updateProfile" />
                         </div><br>
                         <!-- Row 4 Email -->
                         <div class="row">
                             <asp:Label class="row" ID="lblEmail" runat="server" Text="Email"></asp:Label>
                             <asp:TextBox class="row-9 rounded" ID="txtEmail" runat="server" Width="320px"></asp:TextBox>
                             <asp:RequiredFieldValidator class="col-1 p-0 text-danger" ID="vldtEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is required." ToolTip="Contact without '-'" ValidationGroup="updateProfile" Font-Bold="True">*</asp:RequiredFieldValidator>
+                            <asp:RegularExpressionValidator runat="server" ControlToValidate="txtEmail" ValidationExpression="(^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$)" ErrorMessage="Invalid Email Format!" ValidationGroup="updateProfile" />
                         </div><br>
                         <!-- Row 5 Password -->
                         <div class="row">
                             <asp:Label class="row" ID="lblPwd" runat="server" Text="Password"></asp:Label>
-                            <asp:TextBox class="row-9 rounded" ID="txtPwd" runat="server" Width="320px"></asp:TextBox>
+                            <asp:TextBox class="row-9 rounded" ID="txtPwd" runat="server" TextMode="Password" Width="320px"></asp:TextBox>
                             <asp:RequiredFieldValidator class="col-1 p-0 text-danger" ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtPwd" ErrorMessage="Password is required." ToolTip="Contact without '-'" ValidationGroup="updateProfile" Font-Bold="True">*</asp:RequiredFieldValidator>
                         </div><br>
                         <!-- Row 6 Confirm Password -->
                         <div class="row">
                             <asp:Label class="row" ID="lblCfmPwd" runat="server" Text="Confirm Password"></asp:Label>
-                            <asp:TextBox class="row-9 rounded" ID="txtCfmPwd" runat="server" Width="320px"></asp:TextBox>
+                            <asp:TextBox class="row-9 rounded" ID="txtCfmPwd" runat="server" TextMode="Password" Width="320px"></asp:TextBox>
                             <asp:RequiredFieldValidator class="col-1 p-0 text-danger" ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtCfmPwd" ErrorMessage="Confirm password is requried." ToolTip="Re-type your password" ValidationGroup="updateProfile" Font-Bold="True">*</asp:RequiredFieldValidator>
-                            <asp:CompareValidator ID="vldtComparePwd" ControlToValidate="txtCfmPwd" ControlToCompare="txtPwd" Operator="Equal" Type="String" runat="server" ErrorMessage="Password not match!"></asp:CompareValidator>
+                            <asp:CompareValidator ID="vldtComparePwd" ControlToValidate="txtCfmPwd" ControlToCompare="txtPwd" Operator="Equal" Type="String" runat="server" ValidationGroup="updateProfile" ErrorMessage="Password not match!" Font-Bold="True"></asp:CompareValidator>
                         </div>
                         <!-- Row 7 Gender -->
                         <div class="row">
@@ -71,10 +73,12 @@
                         <!-- Row 8 DoB -->
                         <div class="row">
                             <asp:Label class="row" ID="lblDoB" runat="server" Text="Date Of Birth"></asp:Label>
-                            <asp:TextBox class="row-9 rounded" ID="txtDoB" placeholder="dd.mm.yyyy" runat="server" Width="320px"></asp:TextBox>
+                            <asp:TextBox class="row-9 rounded" ID="txtDoB" placeholder="dd.mm.yyyy" textmode="Date" runat="server" Width="320px"></asp:TextBox>
                             <asp:RequiredFieldValidator class="col-1 p-0 text-danger" ID="vldtDoB" runat="server" ControlToValidate="txtDoB" ErrorMessage="Email is required." ToolTip="Contact without '-'" ValidationGroup="updateProfile" Font-Bold="True">*</asp:RequiredFieldValidator>
+
                         </div>
                     </div>
+
                     <!-- Right Address Details -->
                     <div class="col-5 text-xl font-bolder">
                         <h1 class="font-bolder text-xxl color-dyellow">Address</h1>
@@ -102,13 +106,13 @@
                             <asp:Label class="row" ID="lblPostcode" runat="server" Text="Postcode"></asp:Label>
                             <asp:TextBox class="row-9 rounded" ID="txtPostcode" runat="server" Width="320px"></asp:TextBox>
                             <asp:RequiredFieldValidator class="col-1 p-0 text-danger" ID="vldtPostcode" runat="server" ControlToValidate="txtPostcode" ErrorMessage="Postcode is required." ToolTip="Postcode" ValidationGroup="updateProfile" Font-Bold="True">*</asp:RequiredFieldValidator>
-
+                            <asp:RegularExpressionValidator runat="server" ControlToValidate="txtPostcode" ValidationExpression="(^[0-9]{5}?$)" ErrorMessage="Invalid Postcode Format!" ValidationGroup="updateProfile" />
                         </div><br>
                         <!-- Row 5 State -->
                         <div class="row">
                             <asp:Label class="row" ID="lblState" runat="server" Text="State"></asp:Label>
                             <asp:DropDownList class="row-3 rounded" ID="droplstState" Width="220px" runat="server">
-                                <asp:ListItem Enabled="False" Selected="True" Value="0">- State -</asp:ListItem>
+                                <asp:ListItem Selected="True" Value="0">- State -</asp:ListItem>
                                 <asp:ListItem Value="Johor">Johor</asp:ListItem>
                                 <asp:ListItem Value="Kedah">Kedah</asp:ListItem>
                                 <asp:ListItem Value="Kelantan">Kelantan</asp:ListItem>
@@ -123,18 +127,18 @@
                                 <asp:ListItem Value="Selangor">Selangor</asp:ListItem>
                                 <asp:ListItem Value="Terengganu">Terengganu</asp:ListItem>
                             </asp:DropDownList>
-
+                            <asp:CompareValidator ID="CompareValidator1" ControlToValidate="droplstState" Operator="NotEqual" Type="String" runat="server" ValidationGroup="updateProfile" ErrorMessage="Invalid State!" Font-Bold="True" ValueToCompare="0"></asp:CompareValidator>
                         </div>
                     </div>
                 </div>
-                <div class="row" style="min-height: 100px;">
-
+                <div class="row text-center justify-content-center" style="min-height: 100px;">
+                    <asp:ValidationSummary ID="vldtSumUpdate" runat="server" ForeColor="Red" ValidationGroup="updateProfile" Font-Bold="True" Font-Size="Large" />
                 </div>
                 <!-- Row 2 buttons -->
                 <div class="row justify-content-center">
-                    <asp:Button class="col-3 m-3 font-bold text-xl btn btn-primary" ID="btnUpdate" runat="server" Text="Update" Height="60px" OnClick="btnUpdate_Click" />
-                    <asp:Button class="col-2 m-3 font-bold text-xl btn btn-outline-danger" ID="btnDiscard" runat="server" Text="Discard" Height="60px" OnClick="btnDiscard_Click" />
-                    <asp:Button class="col-2 m-3 font-bold text-xl btn btn-outline-danger" ID="btnLogout" runat="server" Text="Logout" Height="60px" OnClick="btnLogout_Click" />
+                    <asp:Button class="col-3 m-3 font-bold text-xl btn btn-primary" ID="btnUpdate" runat="server" ValidationGroup="updateProfile" Text="Update" Height="60px" OnClick="btnUpdate_Click" />
+                    <asp:Button class="col-2 m-3 font-bold text-xl btn btn-outline-danger" ID="btnDiscard" runat="server" Text="Discard" Height="60px" OnClick="btnDiscard_Click" CausesValidation="False" />
+                    <asp:Button class="col-2 m-3 font-bold text-xl btn btn-outline-danger" ID="btnLogout" runat="server" Text="Logout" Height="60px" OnClick="btnLogout_Click" CausesValidation="False" />
                 </div>
             </div>
         </div>
