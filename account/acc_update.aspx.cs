@@ -24,7 +24,6 @@ namespace WAD_Assignment_SF.account
                     SqlConnection con = new SqlConnection(cs);
                     sql1 = "SELECT * FROM account INNER JOIN customer ON account.accID = customer.cust_accID WHERE accEmail=@email";
                     sql2 = "SELECT * FROM account INNER JOIN address ON account.accID = address.user_accID WHERE accEmail=@email";
-
                     SqlCommand cmd1 = new SqlCommand(sql1, con);
                     SqlCommand cmd2 = new SqlCommand(sql2, con);
                     cmd1.Parameters.AddWithValue("@email", usr.email);
@@ -40,12 +39,10 @@ namespace WAD_Assignment_SF.account
                         txtPwd.Text = dr["accPassword"].ToString();
                         txtCfmPwd.Text = "";
                         radBtnGender.SelectedValue = dr["custGender"].ToString();
-
                         DateTime oDate = Convert.ToDateTime(dr["custDOB"].ToString());
                         txtDoB.Text = oDate.ToString("yyyy-MM-dd");
                     }
                     dr.Close();
-
                     dr = cmd2.ExecuteReader();
                     if (dr.Read())
                     {
@@ -54,7 +51,6 @@ namespace WAD_Assignment_SF.account
                         txtStreet.Text = dr["addrStreet"].ToString();
                         txtPostcode.Text = dr["addrPostCode"].ToString();
                         droplstState.SelectedValue = dr["addrState"].ToString();
-
                     }
                     dr.Close();
                     con.Close();
@@ -75,11 +71,12 @@ namespace WAD_Assignment_SF.account
                 if (usr != null)
                 {
                     string sql1, sql2, sql3;
+                    // Set Connectin String
                     SqlConnection con = new SqlConnection(cs);
+                    // Prep Command
                     sql1 = "UPDATE account SET accUserName=@accUserName, accEmail=@accEmail,accPassword=@accPassword, contactNumber=@contactNumber WHERE accID=@accID";
                     sql2 = "UPDATE customer SET custName=@custname, custGender=@custGender, custDOB=@custDOB WHERE cust_accID=@accID";
                     sql3 = "UPDATE address SET addrUnitNumber=@addrUnitNumber, addrBuildingName=@addrBuildingName, addrStreet=@addrStreet, addrPostCode=@addrPostCode, addrState=@addrState WHERE user_accID=@accID";
-
                     SqlCommand cmd1 = new SqlCommand(sql1, con);
                     SqlCommand cmd2 = new SqlCommand(sql2, con);
                     SqlCommand cmd3 = new SqlCommand(sql3, con);
@@ -98,12 +95,19 @@ namespace WAD_Assignment_SF.account
                     cmd3.Parameters.AddWithValue("@addrPostCode", txtPostcode.Text);
                     cmd3.Parameters.AddWithValue("@addrState", droplstState.SelectedValue);
                     cmd3.Parameters.AddWithValue("@accID", usr.accID);
-
+                    // Execute Command
                     con.Open();
                     cmd1.ExecuteNonQuery();
                     cmd2.ExecuteNonQuery();
                     cmd3.ExecuteNonQuery();
                     con.Close();
+
+                    // Update Session
+                    usr.email = txtEmail.Text;
+                    usr.accName = txtUserName.Text;
+                    Session["user"] = usr;
+                    // Refresh the page
+                    Response.Redirect("acc_Update.aspx");
                 }
             }
         }
