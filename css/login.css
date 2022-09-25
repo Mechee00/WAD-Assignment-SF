@@ -1,38 +1,78 @@
 ﻿.bg {
-    background-image: linear-gradient(90deg, rgba(255, 255, 0, 0.096)0%, rgba(0, 0, 0, 0.2)100%), url("../src/img/login_bg.jpg");
-    background-size: cover,cover;
-    height: 1266px;
+    background-image: linear-gradient(270deg, rgba(255, 255, 0, 0.196)0%, rgba(0, 0, 0, 0.2)100%), url("../src/img/login_bg.jpg");
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    /* padding-top: 200px; */
+    /* height: 800px; */
+    height: 1200px;
+    /* width: 1920px; */
+}
+
+#lblInvalidAuth span {
+    font-size: large;
+    color: red;
+}
+
+.spacer {
+    height: 150px;
+}
+
+.col_2 {
+    color: var(--dgray);
+    font-size: x-large;
+
+}
+
+.login_card {
+    margin-left: 150px;
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+
+.inner_container {
+    height: inherit;
+    width: 1920px;
+    /* max-width: 1920px; */
+    padding-left: auto;
+    padding-right: auto;
+    /* background-color: red; */
+    /* padding: 50px, 0; */
+}
+
+.fb,
+.google {
+    border: 0px solid transparent;
+    scale: 1.3;
+    font-weight: 400;
+    width: 250px;
+    text-align: center;
 }
 
 .fb {
     background-color: #3B5998 !important;
-    border: 0px solid transparent;
     color: white !important;
-    width: 250px;
-    font-weight: 400;
-    text-align: center;
 }
 
 .google {
     background-color: #dd4b39 !important;
-    border: 0px solid transparent;
     color: white !important;
-    width: 250px;
-    font-weight: 400;
 }
 
 .fb:hover {
-    background-color: transparent !important;
-    border: 1px solid #3B5998 !important;
+    background-color: white !important;
+    border: 2px solid #3B5998 !important;
     color: #3B5998 !important;
     font-weight: 600 !important;
-    transition: all 200ms ease !important;
+    scale: 1.5;
+    transition: all 50ms ease !important;
 }
 
+
 .google:hover {
-    background-color: transparent !important;
-    border: 1px solid #dd4b39 !important;
+    background-color: white !important;
+    border: 2px solid #dd4b39 !important;
     color: #dd4b39 !important;
     font-weight: 600 !important;
-    transition: all 200ms ease !important;
+    scale: 1.5;
+    transition: all 50ms ease !important;
 }

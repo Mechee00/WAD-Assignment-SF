@@ -1,6 +1,29 @@
 .bg {
-    /* background-color: var(#ffe186); */
     background-image: url(../src/img/header_bg.jpg);
-    /* background-color: var(--lgray); */
     height: 1400px;
+}
+
+.spacer {
+    height: 200px;
+}
+
+.inner_container {
+    height: inherit;
+    width: 1920px;
+
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.rad {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+input[type=radio] {
+    height: 20px;
+    width: 20px;
+    margin-left: 22px;
+    margin-right: 5px;
+    padding-left: 5px;
 }

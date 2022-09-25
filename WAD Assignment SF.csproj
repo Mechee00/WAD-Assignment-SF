@@ -70,6 +70,10 @@
     <Content Include="account\login.aspx" />
     <Content Include="account\seller.aspx" />
     <Content Include="account\signup.aspx" />
+    <Content Include="App_Data\user.mdf" />
+    <Content Include="App_Data\user_log.ldf">
+      <DependentUpon>user.mdf</DependentUpon>
+    </Content>
     <Content Include="App_Data\product.mdf" />
     <Content Include="App_Data\product_log.ldf">
       <DependentUpon>product.mdf</DependentUpon>
@@ -291,6 +295,7 @@
     <Compile Include="transaction\transactiondetails.aspx.designer.cs">
       <DependentUpon>transactiondetails.aspx</DependentUpon>
     </Compile>
+    <Compile Include="user.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="main.Master" />

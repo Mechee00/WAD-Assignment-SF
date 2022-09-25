@@ -1,83 +1,92 @@
 ﻿<%@ Page Title="SAFOD | Account" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="WAD_Assignment_SF.account.login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" href="../css/login.css">
+
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-3.6.0.min.js"></script>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="row bg align-items-center" style="padding-left: 150px">
-        <!-- Right Login -->
-        <div class="col-auto">
-            <asp:Login ID="Login1" runat="server">
-                <LayoutTemplate>
-                    <!-- Title -->
-                    <div class="row">
-                        <h1 class="col">
-                            Login
+
+    <div class="container-fluid bg justify-content-center">
+        <div class="inner_container mx-auto">
+            <div class="row spacer"></div>
+            <div class="row align-items-center mx-5">
+                <!-- Col 1 -->
+                <div class="col-auto card shadow-lg login_card">
+                    <div class="card-body ps-5">
+                        <!-- Title -->
+                        <h1 class="row mx-1">
+                            <b>Welcome Back!</b>
                         </h1>
-                    </div>
-                    <br>
-                    <!-- Emails -->
-                    <div class="row">
-                        <h5 class="col">
-                            <asp:Label ID="UserNameLabel" runat="server" AssociatedControlID="UserName">User Name</asp:Label>
-                        </h5>
-                    </div>
-                    <div class="row">
-                        <h4 class="col">
-                            <asp:TextBox class="col" ID="UserName" runat="server"></asp:TextBox>
-                            <asp:RequiredFieldValidator class="col-auto text-danger" ID="UserNameRequired" runat="server" ControlToValidate="UserName" ErrorMessage="User Name or Email is required." ToolTip="User Name or Email is required." ValidationGroup="Login1">*</asp:RequiredFieldValidator>
+
+                        <br>
+                        <!-- Emails -->
+                        <h4 class="row mx-2">
+                            <asp:TextBox class="col-auto" ID="txtEmail" placeholder="Email" runat="server" Height="50px" Width="480px" TextMode="Email"></asp:TextBox>
+                            <asp:RequiredFieldValidator class="col p-0 text-danger" ID="EmailRequired" runat="server" ControlToValidate="txtEmail" ErrorMessage="User Name or Email is required." ToolTip="User Name or Email is required." ValidationGroup="Login1" Font-Bold="True">*</asp:RequiredFieldValidator>
+                            <asp:RegularExpressionValidator class="col p-0 text-danger" ID="regexEmailValidator" runat="server" ControlToValidate="txtEmail" ValidationGroup="Login1" ValidationExpression="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" ErrorMessage="Invalid Email">*</asp:RegularExpressionValidator>
                         </h4>
-                    </div>
-                    <!-- Passwords -->
-                    <div class="row">
-                        <h5 class="col">
-                            <asp:Label ID="PasswordLabel" runat="server" AssociatedControlID="Password">Password</asp:Label>
-                        </h5>
-                    </div>
-                    <div class="row">
-                        <h4 class="col">
-                            <asp:TextBox class="col" ID="Password" runat="server" TextMode="Password"></asp:TextBox>
-                            <asp:RequiredFieldValidator class="col-auto text-danger" ID="PasswordRequired" runat="server" ControlToValidate="Password" ErrorMessage="Password is required." ToolTip="Password is required." ValidationGroup="Login1">*</asp:RequiredFieldValidator>
+                        <br>
+                        <!-- Passwords -->
+                        <h4 class="row mx-2">
+                            <asp:TextBox class="col-auto" ID="txtPwd" placeholder="Password" runat="server" Height="50px" Width="480px" TextMode="Password"></asp:TextBox>
+                            <asp:RequiredFieldValidator class="col text-danger" ID="PasswordRequired" runat="server" ControlToValidate="txtPwd" ErrorMessage="Password is required." ToolTip="Password is required." ValidationGroup="Login1" Font-Bold="True">*</asp:RequiredFieldValidator>
                         </h4>
+
+                        <!-- Forgot Password -->
+                        <a href="!" class="row mx-2 text-muted text-lg-end">Forgot Password?</a><br />
+
+                        &nbsp;
+                        
+                        <asp:Label class="lblInvalidAuth" ID="lblInvalidAuth" runat="server" Text=""></asp:Label>
+                        <br />
+                        <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" ValidationGroup="Login1" Font-Bold="True" Font-Size="Large" />
+                        <br>
+                        <!-- Remember Me -->
+                        <asp:CheckBox class="mx-2" ID="RememberMe" runat="server" Text="Remember me next time." Font-Size="Medium" Width="472px" />
+
+                        <br />
+                        <br />
+                        <!-- Buttons -->
+                        <div class="row btn-group-horizontal">
+                            <b>
+                                <asp:Button class="col-6 btn mx-2 btn-success" ID="btnLogin" runat="server" CommandName="Login" Text="Log In" ValidationGroup="Login1" Font-Size="Large" OnClick="btnLogin_Click1" />
+                                <asp:Button class="col-4 btn mx-2 btn-outline-success" ID="btnSignup" runat="server" CommandName="Signup" Text="Sign Up" ValidationGroup="Signup1" OnClientClick='url("signup.aspx")' OnClick="btnSignup_Click" Font-Size="Large" />
+                            </b>
+                        </div>
+
+                        <b class="row mt-5 mb-2 text-center">
+                            <h4> or login with</h4>
+                        </b>
+                        <hr class="row" />
+                        <h2 class="row-auto mt-4 py-2 text-center">
+                            <a href="#" class="fb btn">
+                                <i class="bi bi-facebook"></i> Login with Facebook
+                            </a>
+                        </h2>
+                        <h2 class=" row-auto py-2 text-center ">
+                            <a href="#" class="google btn">
+                                <i class="bi bi-google"></i> Login with Google+
+                            </a>
+                        </h2>
+
                     </div>
-                    <!-- Forgot Password -->
-                    <div class="row align-self-end">
-                        <a href="!" class="text-muted text-s">Forgot Password?</a>
-                    </div>
-                    <br>
-                    <br>
-                    <!-- Remember Me -->
-                    <div class="row">
-                        <asp:CheckBox class="col" ID="RememberMe" runat="server" Text="  Remember me next time." />
-                    </div>
-                    <div class="row">
-                        <asp:Literal ID="FailureText" runat="server" EnableViewState="False"></asp:Literal>
-                    </div>
-                    <br>
-                    <!-- Buttons -->
-                    <div class="row p-1 btn-group-horizontal">
-                        <asp:Button class="col-6 btn font-bold text-l py-2 mx-2 btn-success" ID="btnLogin" runat="server" CommandName="Login" Text="Log In" ValidationGroup="Login1" />
-                        <asp:Button class="col-4 btn font-bold text-l py-2 mx-2 btn-outline-success" ID="btnSignup" runat="server" CommandName="Signup" Text="Sign Up" ValidationGroup="Signup1" OnClientClick='url("signup.aspx")' OnClick="btnSignup_Click" />
-                    </div>
-                </LayoutTemplate>
-            </asp:Login>
-        </div>
-        <!-- Center or message -->
-        <div class="col-auto mx-2">
-            <h5 class="row text-center"> or <br> register with</h5>
-        </div>
-        <!-- Left Login -->
-        <div class="col-auto mx-3">
-            <h4 class="row-auto py-2">
-                <a href="#" class="fb btn" style="border: ;">
-                    <i class="bi bi-facebook"></i> Login with Facebook
-                </a>
-            </h4>
-            <h4 class=" row-auto py-2">
-                <a href="#" class="google btn">
-                    <i class="bi bi-google"></i> Login with Google+
-                </a>
-            </h4>
+                </div>
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="accID" DataSourceID="SqlDataSource1">
+                    <Columns>
+                        <asp:BoundField DataField="accID" HeaderText="accID" InsertVisible="False" ReadOnly="True" SortExpression="accID" />
+                        <asp:BoundField DataField="accUserName" HeaderText="accUserName" SortExpression="accUserName" />
+                        <asp:BoundField DataField="accEmail" HeaderText="accEmail" SortExpression="accEmail" />
+                        <asp:BoundField DataField="accPassword" HeaderText="accPassword" SortExpression="accPassword" />
+                        <asp:BoundField DataField="contactNumber" HeaderText="contactNumber" SortExpression="contactNumber" />
+                    </Columns>
+                </asp:GridView>
+            </div>
         </div>
     </div>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:accCS %>" SelectCommand="SELECT * FROM [account]"></asp:SqlDataSource>
 </asp:Content>

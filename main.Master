@@ -48,9 +48,7 @@
                     </div>
                 </header>
                 <!-- Content -->
-                <!-- <div class="row" style="height: auto;"> -->
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
-                <!-- </div> -->
                 <!-- Footer -->
                 <footer class="row text-center pt-3 bg-lgreen">
                     <!-- Footer Content -->

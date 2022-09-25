@@ -11,7 +11,15 @@ namespace WAD_Assignment_SF.account
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Page.IsPostBack)
+            {
+                user usr = (user)Session["user"];
+                if (usr != null)
+                {
+                    txtUserName.Text = usr.accName;
 
+                }
+            }
         }
     }
 }
