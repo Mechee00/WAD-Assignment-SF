@@ -17,7 +17,7 @@ namespace WAD_Assignment_SF.account
             {
                 // Session
                 user usr = (user)Session["user"];
-                if (usr != null )
+                if (usr != null)
                 {
                     Response.Redirect("../home.aspx");
                 }
@@ -29,7 +29,7 @@ namespace WAD_Assignment_SF.account
                     SqlConnection con = new SqlConnection(cs);
                     string sql = "SELECT * FROM account WHERE accID=@accID";
                     SqlCommand cmd = new SqlCommand(sql, con);
-                    cmd.Parameters.Add(new SqlParameter("@accID",coo.Value));
+                    cmd.Parameters.Add(new SqlParameter("@accID", coo.Value));
                     con.Open();
                     SqlDataReader dr = cmd.ExecuteReader();
                     if (dr.Read())
@@ -39,8 +39,8 @@ namespace WAD_Assignment_SF.account
                         Session["user"] = usr;
                         Response.Redirect("../home.aspx");
                     }
-                    }
-        }
+                }
+            }
         }
 
         protected void btnSignup_Click(object sender, EventArgs e)
@@ -112,7 +112,7 @@ namespace WAD_Assignment_SF.account
                     }
                 }
                 dr.Close();
-                
+
             }
             else
             {

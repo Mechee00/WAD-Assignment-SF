@@ -79,5 +79,4 @@
             </div>
         </div>
     </div>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:accCS %>" SelectCommand="SELECT * FROM [account]"></asp:SqlDataSource>
 </asp:Content>

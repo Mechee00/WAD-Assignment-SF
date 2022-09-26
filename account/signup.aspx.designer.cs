@@ -15,30 +15,30 @@ namespace WAD_Assignment_SF.account
     {
 
         /// <summary>
-        /// CreateUserWizard1 control.
+        /// profile_field control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CreateUserWizard CreateUserWizard1;
+        protected global::WAD_Assignment_SF.account.profile_field profile_field;
 
         /// <summary>
-        /// CreateUserWizardStep1 control.
+        /// btnSignup control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CreateUserWizardStep CreateUserWizardStep1;
+        protected global::System.Web.UI.WebControls.Button btnSignup;
 
         /// <summary>
-        /// CompleteWizardStep1 control.
+        /// btnCancel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompleteWizardStep CompleteWizardStep1;
+        protected global::System.Web.UI.WebControls.Button btnCancel;
     }
 }

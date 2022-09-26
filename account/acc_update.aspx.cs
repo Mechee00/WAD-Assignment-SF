@@ -32,26 +32,26 @@ namespace WAD_Assignment_SF.account
                     SqlDataReader dr = cmd1.ExecuteReader();
                     if (dr.Read())
                     {
-                        txtFullName.Text = dr["custName"].ToString();
-                        txtUserName.Text = dr["accUserName"].ToString();
-                        txtContact.Text = dr["contactNumber"].ToString();
-                        txtEmail.Text = dr["accEmail"].ToString();
-                        txtPwd.Text = dr["accPassword"].ToString();
-                        txtCfmPwd.Text = "";
-                        radBtnGender.SelectedValue = dr["custGender"].ToString();
+                      profile_field.txtFullName.Text = dr["custName"].ToString();
+                        profile_field.txtUserName.Text = dr["accUserName"].ToString();
+                        profile_field.txtContact.Text = dr["contactNumber"].ToString();
+                        profile_field.txtEmail.Text = dr["accEmail"].ToString();
+                        profile_field.txtPwd.Text = dr["accPassword"].ToString();
+                        profile_field.txtCfmPwd.Text = "";
+                        profile_field.radBtnGender.SelectedValue = dr["custGender"].ToString();
                         DateTime oDate = Convert.ToDateTime(dr["custDOB"].ToString());
-                        txtDoB.Text = oDate.ToString("yyyy-MM-dd");
+                        profile_field.txtDoB.Text = oDate.ToString("yyyy-MM-dd");
                     }
                     
                     dr.Close();
                     dr = cmd2.ExecuteReader();
                     if (dr.Read())
                     {
-                        txtUnit.Text = dr["addrUnitNumber"].ToString();
-                        txtBuilding.Text = dr["addrBuildingName"].ToString();
-                        txtStreet.Text = dr["addrStreet"].ToString();
-                        txtPostcode.Text = dr["addrPostCode"].ToString();
-                        droplstState.SelectedValue = dr["addrState"].ToString();
+                        profile_field.txtUnit.Text = dr["addrUnitNumber"].ToString();
+                        profile_field.txtBuilding.Text = dr["addrBuildingName"].ToString();
+                        profile_field.txtStreet.Text = dr["addrStreet"].ToString();
+                        profile_field.txtPostcode.Text = dr["addrPostCode"].ToString();
+                        profile_field.droplstState.SelectedValue = dr["addrState"].ToString();
                     }
                     dr.Close();
                     con.Close();
@@ -81,20 +81,20 @@ namespace WAD_Assignment_SF.account
                     SqlCommand cmd1 = new SqlCommand(sql1, con);
                     SqlCommand cmd2 = new SqlCommand(sql2, con);
                     SqlCommand cmd3 = new SqlCommand(sql3, con);
-                    cmd1.Parameters.AddWithValue("@accUserName", txtUserName.Text);
-                    cmd1.Parameters.AddWithValue("@accEmail", txtEmail.Text);
-                    cmd1.Parameters.AddWithValue("@accPassword", txtPwd.Text);
-                    cmd1.Parameters.AddWithValue("@contactNumber", txtContact.Text);
+                    cmd1.Parameters.AddWithValue("@accUserName", profile_field.txtUserName.Text);
+                    cmd1.Parameters.AddWithValue("@accEmail", profile_field.txtEmail.Text);
+                    cmd1.Parameters.AddWithValue("@accPassword", profile_field.txtPwd.Text);
+                    cmd1.Parameters.AddWithValue("@contactNumber", profile_field.txtContact.Text);
                     cmd1.Parameters.AddWithValue("@accID", usr.accID);
-                    cmd2.Parameters.AddWithValue("@custname", txtFullName.Text);
-                    cmd2.Parameters.AddWithValue("@custGender", radBtnGender.SelectedValue);
-                    cmd2.Parameters.AddWithValue("@custDOB", txtDoB.Text);
+                    cmd2.Parameters.AddWithValue("@custname", profile_field.txtFullName.Text);
+                    cmd2.Parameters.AddWithValue("@custGender", profile_field.radBtnGender.SelectedValue);
+                    cmd2.Parameters.AddWithValue("@custDOB", profile_field.txtDoB.Text);
                     cmd2.Parameters.AddWithValue("@accID", usr.accID);
-                    cmd3.Parameters.AddWithValue("@addrUnitNumber", txtUnit.Text);
-                    cmd3.Parameters.AddWithValue("@addrBuildingName", txtBuilding.Text);
-                    cmd3.Parameters.AddWithValue("@addrStreet", txtStreet.Text);
-                    cmd3.Parameters.AddWithValue("@addrPostCode", txtPostcode.Text);
-                    cmd3.Parameters.AddWithValue("@addrState", droplstState.SelectedValue);
+                    cmd3.Parameters.AddWithValue("@addrUnitNumber", profile_field.txtUnit.Text);
+                    cmd3.Parameters.AddWithValue("@addrBuildingName", profile_field.txtBuilding.Text);
+                    cmd3.Parameters.AddWithValue("@addrStreet", profile_field.txtStreet.Text);
+                    cmd3.Parameters.AddWithValue("@addrPostCode", profile_field.txtPostcode.Text);
+                    cmd3.Parameters.AddWithValue("@addrState", profile_field.droplstState.SelectedValue);
                     cmd3.Parameters.AddWithValue("@accID", usr.accID);
                     // Execute Command
                     con.Open();
@@ -104,8 +104,8 @@ namespace WAD_Assignment_SF.account
                     con.Close();
 
                     // Update Session
-                    usr.email = txtEmail.Text;
-                    usr.accName = txtUserName.Text;
+                    usr.email = profile_field.txtEmail.Text;
+                    usr.accName = profile_field.txtUserName.Text;
                     Session["user"] = usr;
                     // Refresh the page
                     Response.Redirect("acc_Update.aspx");
