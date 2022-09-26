@@ -3,6 +3,8 @@ using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
 using System.Web.Services.Description;
+using System.Web;
+using System.Drawing;
 
 namespace WAD_Assignment_SF.account
 {
@@ -13,18 +15,32 @@ namespace WAD_Assignment_SF.account
         {
             if (!Page.IsPostBack)
             {
+                // Session
                 user usr = (user)Session["user"];
-                if (usr != null)
+                if (usr != null )
                 {
-                    Response.Write("<script>alert('Welcome back dear " + usr.accName + "');</script>");
                     Response.Redirect("../home.aspx");
                 }
-                else
-                {
-                    // Reset the text box
-                }
-            }
 
+                // Cookies
+                HttpCookie coo = Request.Cookies["accID"];
+                if (coo != null)
+                {
+                    SqlConnection con = new SqlConnection(cs);
+                    string sql = "SELECT * FROM account WHERE accID=@accID";
+                    SqlCommand cmd = new SqlCommand(sql, con);
+                    cmd.Parameters.Add(new SqlParameter("@accID",coo.Value));
+                    con.Open();
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    if (dr.Read())
+                    {
+                        usr = new user();
+                        usr.email = dr["accEmail"].ToString();
+                        Session["user"] = usr;
+                        Response.Redirect("../home.aspx");
+                    }
+                    }
+        }
         }
 
         protected void btnSignup_Click(object sender, EventArgs e)
@@ -34,6 +50,7 @@ namespace WAD_Assignment_SF.account
 
         protected void btnLogin_Click1(object sender, EventArgs e)
         {
+
             SqlConnection con = new SqlConnection(cs);
 
             string sql1 = "SELECT count(accEmail) FROM account WHERE accEmail=@email and accPassword=@pwd";
@@ -69,6 +86,14 @@ namespace WAD_Assignment_SF.account
                     usr.accID = Convert.ToInt32(dr["accID"]);
                     usr.accName = dr["accUserName"].ToString();
                     Session["user"] = usr;
+                    if (chkBoxRememberMe.Checked)
+                    {
+                        HttpCookie coo = new HttpCookie("accID", usr.accID.ToString());
+                        coo.Expires = DateTime.Now.AddDays(31);
+                        Response.Cookies.Add(coo);
+                    }
+                    dr.Close();
+                    con.Close();
                     Response.Redirect("acc_Update.aspx");
                 }
                 else
@@ -87,6 +112,7 @@ namespace WAD_Assignment_SF.account
                     }
                 }
                 dr.Close();
+                
             }
             else
             {

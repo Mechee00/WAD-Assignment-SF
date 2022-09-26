@@ -42,6 +42,7 @@ namespace WAD_Assignment_SF.account
                         DateTime oDate = Convert.ToDateTime(dr["custDOB"].ToString());
                         txtDoB.Text = oDate.ToString("yyyy-MM-dd");
                     }
+                    
                     dr.Close();
                     dr = cmd2.ExecuteReader();
                     if (dr.Read())
@@ -119,8 +120,19 @@ namespace WAD_Assignment_SF.account
 
         protected void btnLogout_Click(object sender, EventArgs e)
         {
+            // Clear Session
             Session.Remove("user");
+            // Clear Cookies
+            if ((Request.Cookies["accID"] != null))
+            {
+                Response.Cookies["accID"].Expires = DateTime.Now.AddDays(-100);
+            }
             Response.Redirect("login.aspx");
+        }
+
+        protected void btnDelAcc_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("acc_delete.aspx");
         }
     }
 }

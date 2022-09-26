@@ -41,13 +41,13 @@
                         <a href="!" class="row mx-2 text-muted text-lg-end">Forgot Password?</a><br />
 
                         &nbsp;
-                        
+
                         <asp:Label class="lblInvalidAuth" ID="lblInvalidAuth" runat="server" Text=""></asp:Label>
                         <br />
                         <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" ValidationGroup="Login1" Font-Bold="True" Font-Size="Large" />
                         <br>
                         <!-- Remember Me -->
-                        <asp:CheckBox class="mx-2" ID="RememberMe" runat="server" Text="Remember me next time." Font-Size="Medium" Width="472px" />
+                        <asp:CheckBox class="mx-2" ID="chkBoxRememberMe" runat="server" Text="Remember me next time." Font-Size="Medium" Width="472px" />
 
                         <br />
                         <br />
@@ -76,15 +76,6 @@
 
                     </div>
                 </div>
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="accID" DataSourceID="SqlDataSource1">
-                    <Columns>
-                        <asp:BoundField DataField="accID" HeaderText="accID" InsertVisible="False" ReadOnly="True" SortExpression="accID" />
-                        <asp:BoundField DataField="accUserName" HeaderText="accUserName" SortExpression="accUserName" />
-                        <asp:BoundField DataField="accEmail" HeaderText="accEmail" SortExpression="accEmail" />
-                        <asp:BoundField DataField="accPassword" HeaderText="accPassword" SortExpression="accPassword" />
-                        <asp:BoundField DataField="contactNumber" HeaderText="contactNumber" SortExpression="contactNumber" />
-                    </Columns>
-                </asp:GridView>
             </div>
         </div>
     </div>

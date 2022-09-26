@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about\faq.aspx" />
+    <Content Include="account\acc_delete.aspx" />
     <Content Include="account\acc_update.aspx" />
     <Content Include="account\login.aspx" />
     <Content Include="account\seller.aspx" />
@@ -150,6 +151,13 @@
     </Compile>
     <Compile Include="about\faq.aspx.designer.cs">
       <DependentUpon>faq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="account\acc_delete.aspx.cs">
+      <DependentUpon>acc_delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="account\acc_delete.aspx.designer.cs">
+      <DependentUpon>acc_delete.aspx</DependentUpon>
     </Compile>
     <Compile Include="account\acc_update.aspx.cs">
       <DependentUpon>acc_update.aspx</DependentUpon>
