@@ -13,7 +13,7 @@ namespace WAD_Assignment_SF.account
         string cs = Global.accCS;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         protected void btnCancel_Click(object sender, EventArgs e)
@@ -37,13 +37,13 @@ namespace WAD_Assignment_SF.account
                 SqlCommand cmd2 = new SqlCommand(sql2, con);
                 SqlCommand cmd3 = new SqlCommand(sql3, con);
                 cmd1.Parameters.AddWithValue("@accID", usr.accID);
-                cmd2.Parameters.AddWithValue("@user_accID", usr.accID);
-                cmd3.Parameters.AddWithValue("@cust_accID", usr.accID);
+                cmd2.Parameters.AddWithValue("@accID", usr.accID);
+                cmd3.Parameters.AddWithValue("@accID", usr.accID);
                 // Execute Command
                 con.Open();
-                cmd1.ExecuteNonQuery();
                 cmd2.ExecuteNonQuery();
                 cmd3.ExecuteNonQuery();
+                cmd1.ExecuteNonQuery();
                 con.Close();
 
                 // Clear Session and Logout

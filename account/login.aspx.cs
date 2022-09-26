@@ -53,7 +53,7 @@ namespace WAD_Assignment_SF.account
 
             SqlConnection con = new SqlConnection(cs);
 
-            string sql1 = "SELECT count(accEmail) FROM account WHERE accEmail=@email and accPassword=@pwd";
+            string sql1 = "SELECT count(accEmail) FROM account WHERE accEmail=@email AND accPassword=@pwd";
             string sql2 = "SELECT * FROM account" +
                 " INNER JOIN customer ON account.accID = customer.cust_accID" +
                 " WHERE account.accEmail=@email";

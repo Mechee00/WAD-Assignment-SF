@@ -10,6 +10,7 @@
     <!-- Outer Container -->
     <div class="container-fluid bg justify-content-center">
         <div class="row spacer"></div>
+
         <!-- Inner Container -->
         <div class="inner_container mx-auto">
             <div class="row align-items-center me-5">

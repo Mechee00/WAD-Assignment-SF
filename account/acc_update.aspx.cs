@@ -32,7 +32,7 @@ namespace WAD_Assignment_SF.account
                     SqlDataReader dr = cmd1.ExecuteReader();
                     if (dr.Read())
                     {
-                      profile_field.txtFullName.Text = dr["custName"].ToString();
+                        profile_field.txtFullName.Text = dr["custName"].ToString();
                         profile_field.txtUserName.Text = dr["accUserName"].ToString();
                         profile_field.txtContact.Text = dr["contactNumber"].ToString();
                         profile_field.txtEmail.Text = dr["accEmail"].ToString();
@@ -42,7 +42,7 @@ namespace WAD_Assignment_SF.account
                         DateTime oDate = Convert.ToDateTime(dr["custDOB"].ToString());
                         profile_field.txtDoB.Text = oDate.ToString("yyyy-MM-dd");
                     }
-                    
+
                     dr.Close();
                     dr = cmd2.ExecuteReader();
                     if (dr.Read())
@@ -76,7 +76,7 @@ namespace WAD_Assignment_SF.account
                     SqlConnection con = new SqlConnection(cs);
                     // Prep Command
                     sql1 = "UPDATE account SET accUserName=@accUserName, accEmail=@accEmail,accPassword=@accPassword, contactNumber=@contactNumber WHERE accID=@accID";
-                    sql2 = "UPDATE customer SET custName=@custname, custGender=@custGender, custDOB=@custDOB WHERE cust_accID=@accID";
+                    sql2 = "UPDATE customer SET custName=@custName, custGender=@custGender, custDOB=@custDOB WHERE cust_accID=@accID";
                     sql3 = "UPDATE address SET addrUnitNumber=@addrUnitNumber, addrBuildingName=@addrBuildingName, addrStreet=@addrStreet, addrPostCode=@addrPostCode, addrState=@addrState WHERE user_accID=@accID";
                     SqlCommand cmd1 = new SqlCommand(sql1, con);
                     SqlCommand cmd2 = new SqlCommand(sql2, con);
@@ -86,7 +86,7 @@ namespace WAD_Assignment_SF.account
                     cmd1.Parameters.AddWithValue("@accPassword", profile_field.txtPwd.Text);
                     cmd1.Parameters.AddWithValue("@contactNumber", profile_field.txtContact.Text);
                     cmd1.Parameters.AddWithValue("@accID", usr.accID);
-                    cmd2.Parameters.AddWithValue("@custname", profile_field.txtFullName.Text);
+                    cmd2.Parameters.AddWithValue("@custName", profile_field.txtFullName.Text);
                     cmd2.Parameters.AddWithValue("@custGender", profile_field.radBtnGender.SelectedValue);
                     cmd2.Parameters.AddWithValue("@custDOB", profile_field.txtDoB.Text);
                     cmd2.Parameters.AddWithValue("@accID", usr.accID);
