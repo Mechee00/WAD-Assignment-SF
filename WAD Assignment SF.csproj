@@ -112,6 +112,8 @@
     <Content Include="delivery\delivery.aspx" />
     <Content Include="delivery\deliverydetails.aspx" />
     <Content Include="delivery\deliverylist.aspx" />
+    <Content Include="ErrorPages\DefaultErrorPage.aspx" />
+    <Content Include="ErrorPages\NotFound.html" />
     <Content Include="Global.asax" />
     <Content Include="help.aspx" />
     <Content Include="home.aspx" />
@@ -229,6 +231,13 @@
     </Compile>
     <Compile Include="delivery\deliverylist.aspx.designer.cs">
       <DependentUpon>deliverylist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\DefaultErrorPage.aspx.cs">
+      <DependentUpon>DefaultErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\DefaultErrorPage.aspx.designer.cs">
+      <DependentUpon>DefaultErrorPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

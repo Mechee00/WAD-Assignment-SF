@@ -21,7 +21,6 @@ namespace WAD_Assignment_SF.account
                 {
                     Response.Redirect("../home.aspx");
                 }
-
                 // Cookies
                 HttpCookie coo = Request.Cookies["accID"];
                 if (coo != null)
