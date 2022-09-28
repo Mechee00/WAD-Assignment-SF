@@ -17,6 +17,7 @@ namespace WAD_Assignment_SF.account
                         Response.Redirect("../home.aspx");
                     }
                 }
+            }
         }
     }
 }

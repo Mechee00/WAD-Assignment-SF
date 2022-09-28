@@ -38,8 +38,7 @@
                         </h4>
 
                         <!-- Forgot Password -->
-                        <a href="!" class="row mx-2 text-muted text-lg-end">Forgot Password?</a><br />
-
+                        <asp:HyperLink ID="HyperLink1" class="row mx-2 text-muted text-lg-end" runat="server" NavigateUrl="~/account/forget_password.aspx">Forgot Password?</asp:HyperLink>
                         &nbsp;
 
                         <asp:Label class="lblInvalidAuth" ID="lblInvalidAuth" runat="server" Text=""></asp:Label>

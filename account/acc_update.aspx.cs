@@ -113,22 +113,17 @@ namespace WAD_Assignment_SF.account
             }
         }
 
-        protected void btnDiscard_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("acc_update.aspx");
-        }
-
-        protected void btnLogout_Click(object sender, EventArgs e)
-        {
-            // Clear Session
-            Session.Remove("user");
-            // Clear Cookies
-            if ((Request.Cookies["accID"] != null))
-            {
-                Response.Cookies["accID"].Expires = DateTime.Now.AddDays(-100);
-            }
-            Response.Redirect("login.aspx");
-        }
+        // protected void btnLogout_Click(object sender, EventArgs e)
+        // {
+        //     // Clear Session
+        //     Session.Remove("user");
+        //     // Clear Cookies
+        //     if ((Request.Cookies["accID"] != null))
+        //     {
+        //         Response.Cookies["accID"].Expires = DateTime.Now.AddDays(-100);
+        //     }
+        //     Response.Redirect("login.aspx");
+        // }
 
         protected void btnDelAcc_Click(object sender, EventArgs e)
         {

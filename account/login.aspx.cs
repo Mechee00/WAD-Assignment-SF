@@ -5,6 +5,9 @@ using System.Data;
 using System.Web.Services.Description;
 using System.Web;
 using System.Drawing;
+using ASPSnippets.GoogleAPI;
+using System.Web.Script.Serialization;
+
 
 namespace WAD_Assignment_SF.account
 {
@@ -68,7 +71,6 @@ namespace WAD_Assignment_SF.account
             cmd1.Parameters.Add(new SqlParameter("@pwd", txtPwd.Text));
             cmd2.Parameters.Add(new SqlParameter("@email", txtEmail.Text));
             cmd3.Parameters.Add(new SqlParameter("@email", txtEmail.Text));
-
             con.Open();
             object res = cmd1.ExecuteScalar();
             SqlDataReader dr;

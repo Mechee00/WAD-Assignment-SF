@@ -68,6 +68,7 @@
     <Content Include="about\faq.aspx" />
     <Content Include="account\acc_delete.aspx" />
     <Content Include="account\acc_update.aspx" />
+    <Content Include="account\forget_password.aspx" />
     <Content Include="account\login.aspx" />
     <Content Include="account\profile_field.ascx" />
     <Content Include="account\seller.aspx" />
@@ -168,6 +169,13 @@
     </Compile>
     <Compile Include="account\acc_update.aspx.designer.cs">
       <DependentUpon>acc_update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="account\forget_password.aspx.cs">
+      <DependentUpon>forget_password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="account\forget_password.aspx.designer.cs">
+      <DependentUpon>forget_password.aspx</DependentUpon>
     </Compile>
     <Compile Include="account\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
