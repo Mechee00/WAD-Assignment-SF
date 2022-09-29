@@ -16,6 +16,8 @@ namespace WAD_Assignment_SF.account
         {
             if (!Page.IsPostBack)
             {
+                profile_field.rvldtDoB.MinimumValue = DateTime.Today.AddYears(-60).ToShortDateString();
+                profile_field.rvldtDoB.MaximumValue = DateTime.Today.ToShortDateString();
                 user usr = (user)Session["user"];
                 if (usr != null)
                 {
@@ -113,21 +115,21 @@ namespace WAD_Assignment_SF.account
             }
         }
 
-        // protected void btnLogout_Click(object sender, EventArgs e)
-        // {
-        //     // Clear Session
-        //     Session.Remove("user");
-        //     // Clear Cookies
-        //     if ((Request.Cookies["accID"] != null))
-        //     {
-        //         Response.Cookies["accID"].Expires = DateTime.Now.AddDays(-100);
-        //     }
-        //     Response.Redirect("login.aspx");
-        // }
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            // Clear Session
+            Session.Remove("user");
+            // Clear Cookies
+            if ((Request.Cookies["accID"] != null))
+            {
+                Response.Cookies["accID"].Expires = DateTime.Now.AddDays(-100);
+            }
+            Response.Redirect("login.aspx");
+        }
 
         protected void btnDelAcc_Click(object sender, EventArgs e)
         {
-            Response.Redirect("acc_delete.aspx");
+            Response.Redirect("acc_del.aspx");
         }
     }
 }

@@ -3,7 +3,7 @@
 <div class="row ps-4 mx-auto justify-content-center">
     <!-- Left Personal Details -->
     <div class="col-5 text-xl font-bolder">
-        <h1 class="font-bolder text-xxl color-dyellow">Profile Detail</h1>
+        <h1 class="font-bolder text-xxl">Profile Detail</h1>
         <br/>
         <!-- Row 1 First Name -->
         <div class="row">
@@ -67,13 +67,13 @@
             <asp:Label class="row" ID="lblDoB" runat="server" Text="Date Of Birth"></asp:Label>
             <asp:TextBox class="row-9 rounded" ID="txtDoB" placeholder="dd.mm.yyyy" TextMode="Date" runat="server" Width="320px"></asp:TextBox>
             <asp:RequiredFieldValidator class="col-1 p-0 text-danger" ID="vldtDoB" runat="server" ControlToValidate="txtDoB" ErrorMessage="Email is required." ToolTip="Contact without '-'" ValidationGroup="updateProfile" Font-Bold="True">*</asp:RequiredFieldValidator>
-
+            <asp:RangeValidator ID="rvldtDoB" ControlToValidate="txtDoB" Type="Date" Font-Bold="True" ErrorMessage="Invalid Date Range." ValidationGroup="updateProfile" runat="server"/>
         </div>
     </div>
 
     <!-- Right Address Details -->
     <div class="col-5 text-xl font-bolder">
-        <h1 class="font-bolder text-xxl color-dyellow">Address</h1>
+        <h1 class="font-bolder text-xxl">Address</h1>
         <br/>
         <!-- Row 1 Unit -->
         <div class="row">

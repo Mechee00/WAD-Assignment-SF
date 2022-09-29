@@ -8,12 +8,12 @@ using System.Web.UI.WebControls;
 
 namespace WAD_Assignment_SF.account
 {
-    public partial class acc_delete : System.Web.UI.Page
+    public partial class acc_del : System.Web.UI.Page
     {
         string cs = Global.accCS;
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         protected void btnCancel_Click(object sender, EventArgs e)

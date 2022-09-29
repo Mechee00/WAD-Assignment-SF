@@ -20,6 +20,7 @@
                 <!-- Row 2 buttons -->
                 <div class="row justify-content-center">
                     <asp:Button class="col-3 m-3 font-bold text-xl btn btn-primary" ID="btnUpdate" runat="server" ValidationGroup="updateProfile" Text="Update" Height="60px" OnClick="btnUpdate_Click" />
+                    <asp:Button class="col-2 m-3 font-bold text-xl btn btn-outline-danger" ID="btnLogout" runat="server" Text="Logout" Height="60px" OnClick="btnLogout_Click" CausesValidation="False" />
                     <asp:Button class="col-2 m-3 font-bold text-xl btn btn-danger" ID="btnDelAcc" runat="server" Text="Delete Account" Height="60px" CausesValidation="False" OnClick="btnDelAcc_Click" />
                 </div>
             </div>

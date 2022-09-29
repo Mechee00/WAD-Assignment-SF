@@ -29,6 +29,6 @@ namespace WAD_Assignment_SF.account
         public DropDownList droplstState { get; set; }
         public CompareValidator CompareValidator1 { get; set; }
         public ValidationSummary vldtSumUpdate { get; set; }
-
-}
+        public RangeValidator rvldtDoB { get; set; }
+    }
 }

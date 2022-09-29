@@ -1,17 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="acc_delete.aspx.cs" Inherits="WAD_Assignment_SF.account.acc_delete" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-    <head runat="server">
-        <title>Account Delete</title>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="acc_del.aspx.cs" Inherits="WAD_Assignment_SF.account.acc_del" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+     <title>Account Delete</title>
         <link rel="stylesheet" href="../css/acc_delete.css">
         <link href="../Content/bootstrap.min.css" rel="stylesheet" />
-    </head>
-
-    <body>
-        <form id="form1" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
             <div class="container-fluid bg justify-content-center">
                 <div class="row spacer"></div>
                 <div class="inner_container mx-auto">
@@ -34,8 +27,4 @@
                     </div>
                 </div>
             </div>
-            </div>
-        </form>
-    </body>
-
-</html>
+</asp:Content>

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Data.SqlClient;
 using System.Data;
+using System.Globalization;
+
 namespace WAD_Assignment_SF.account
 {
     public partial class signup : System.Web.UI.Page
@@ -10,7 +12,8 @@ namespace WAD_Assignment_SF.account
         {
             if (!Page.IsPostBack)
             {
-
+                profile_field.rvldtDoB.MinimumValue = DateTime.Today.AddYears(-60).ToShortDateString();
+                profile_field.rvldtDoB.MaximumValue = DateTime.Today.ToShortDateString();
             }
         }
 
@@ -36,7 +39,6 @@ namespace WAD_Assignment_SF.account
 
             // Execute Command
             con.Open();
-
 
             // 1. Check email
             // 2. Update account

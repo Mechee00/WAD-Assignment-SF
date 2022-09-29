@@ -5,8 +5,6 @@ using System.Data;
 using System.Web.Services.Description;
 using System.Web;
 using System.Drawing;
-using ASPSnippets.GoogleAPI;
-using System.Web.Script.Serialization;
 
 
 namespace WAD_Assignment_SF.account

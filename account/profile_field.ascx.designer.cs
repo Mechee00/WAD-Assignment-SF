@@ -23,7 +23,14 @@ namespace WAD_Assignment_SF.account
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblFullName;
 
-        
+        /// <summary>
+        /// txtFullName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+
         /// <summary>
         /// vldtFullName control.
         /// </summary>
@@ -127,6 +134,7 @@ namespace WAD_Assignment_SF.account
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+
         /// <summary>
         /// RequiredFieldValidator1 control.
         /// </summary>
@@ -195,12 +203,32 @@ namespace WAD_Assignment_SF.account
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+
+        /// <summary>
+        /// vldtDoB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator vldtDoB;
+
+        /// <summary>
+        /// txtExpiryDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtExpiryDate;
+
+        /// <summary>
+        /// rvldtDoB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
 
         /// <summary>
         /// lblUnit control.
@@ -218,6 +246,8 @@ namespace WAD_Assignment_SF.account
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+
+        /// <summary>
         /// vldtUnit control.
         /// </summary>
         /// <remarks>
@@ -242,6 +272,7 @@ namespace WAD_Assignment_SF.account
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+
         /// <summary>
         /// vldtBuilding control.
         /// </summary>
@@ -267,6 +298,7 @@ namespace WAD_Assignment_SF.account
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+
         /// <summary>
         /// vldtStreet control.
         /// </summary>
@@ -292,6 +324,7 @@ namespace WAD_Assignment_SF.account
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+
         /// <summary>
         /// vldtPostcode control.
         /// </summary>
