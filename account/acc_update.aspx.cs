@@ -131,5 +131,10 @@ namespace WAD_Assignment_SF.account
         {
             Response.Redirect("acc_del.aspx");
         }
+
+        protected void btnTran_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/transaction/transaction.aspx");
+        }
     }
 }

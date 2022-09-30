@@ -107,7 +107,14 @@
     <Content Include="css\promotion.css" />
     <Content Include="css\signup.css" />
     <Content Include="css\transaction.css" />
+    <Content Include="delivery\delivery.aspx" />
+    <Content Include="delivery\deliveryconfirm.aspx" />
+    <Content Include="delivery\deliverydetails.aspx" />
+    <Content Include="delivery\deliverydetails2.aspx" />
+    <Content Include="delivery\deliverylist.aspx" />
     <Content Include="ErrorPages\DefaultErrorPage.aspx" />
+    <Content Include="ErrorPages\noAuth.aspx" />
+    <Content Include="ErrorPages\noperm.aspx" />
     <Content Include="ErrorPages\NotFound.html" />
     <Content Include="Global.asax" />
     <Content Include="help.aspx" />
@@ -137,6 +144,10 @@
     <Content Include="src\img\paymentmethod.png" />
     <Content Include="src\img\product_bg.jpg" />
     <Content Include="src\logo\favicon.svg" />
+    <Content Include="transaction\payment.aspx" />
+    <Content Include="transaction\transaction.aspx" />
+    <Content Include="transaction\transactiondetails.aspx" />
+    <Content Include="transaction\transactiondetails2.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -191,12 +202,61 @@
     </Compile>
     <Compile Include="CartItem.cs" />
     <Compile Include="CartList.cs" />
+    <Compile Include="delivery\delivery.aspx.cs">
+      <DependentUpon>delivery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="delivery\delivery.aspx.designer.cs">
+      <DependentUpon>delivery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="delivery\deliveryconfirm.aspx.cs">
+      <DependentUpon>deliveryconfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="delivery\deliveryconfirm.aspx.designer.cs">
+      <DependentUpon>deliveryconfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="delivery\deliverydetails.aspx.cs">
+      <DependentUpon>deliverydetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="delivery\deliverydetails.aspx.designer.cs">
+      <DependentUpon>deliverydetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="delivery\deliverydetails2.aspx.cs">
+      <DependentUpon>deliverydetails2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="delivery\deliverydetails2.aspx.designer.cs">
+      <DependentUpon>deliverydetails2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="delivery\deliverylist.aspx.cs">
+      <DependentUpon>deliverylist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="delivery\deliverylist.aspx.designer.cs">
+      <DependentUpon>deliverylist.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ErrorPages\DefaultErrorPage.aspx.cs">
       <DependentUpon>DefaultErrorPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ErrorPages\DefaultErrorPage.aspx.designer.cs">
       <DependentUpon>DefaultErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\noAuth.aspx.cs">
+      <DependentUpon>noAuth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\noAuth.aspx.designer.cs">
+      <DependentUpon>noAuth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\noperm.aspx.cs">
+      <DependentUpon>noperm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\noperm.aspx.designer.cs">
+      <DependentUpon>noperm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -257,6 +317,34 @@
     </Compile>
     <Compile Include="shopping_cart\ShoppingCart.aspx.designer.cs">
       <DependentUpon>ShoppingCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="transaction\payment.aspx.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transaction\payment.aspx.designer.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="transaction\transaction.aspx.cs">
+      <DependentUpon>transaction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transaction\transaction.aspx.designer.cs">
+      <DependentUpon>transaction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="transaction\transactiondetails.aspx.cs">
+      <DependentUpon>transactiondetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transaction\transactiondetails.aspx.designer.cs">
+      <DependentUpon>transactiondetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="transaction\transactiondetails2.aspx.cs">
+      <DependentUpon>transactiondetails2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transaction\transactiondetails2.aspx.designer.cs">
+      <DependentUpon>transactiondetails2.aspx</DependentUpon>
     </Compile>
     <Compile Include="user.cs" />
   </ItemGroup>
