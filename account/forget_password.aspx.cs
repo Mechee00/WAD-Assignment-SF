@@ -35,16 +35,16 @@ namespace WAD_Assignment_SF.account
                 string userName = dr["accUserName"].ToString();
                 string passwrod = dr["accPassword"].ToString();
                 MailMessage mm = new MailMessage();
-                mm.From = new MailAddress("chan37you@gmail.com", "Safod Malaysia");
+                mm.From = new MailAddress("mr.cheah@live.com", "Safod Malaysia");
                 mm.To.Add(txtEmail.Text);
                 mm.Subject = "Safod Password Recovery";
                 mm.Body = string.Format("Dear <h1>{0}</h1><br><br>The password for yoru account is: <h1>{1}</h1>", userName, passwrod);
                 mm.IsBodyHtml = true;
-                SmtpClient smtp = new SmtpClient();
-                smtp.Host = "smtp.gmail.com";
-                smtp.Port = 587;
+                SmtpClient smtp = new SmtpClient("smtp-mail.outlook.com", 587);
+                //smtp.Host = "smtp.gmail.com";
+                //smtp.Port = 587;
                 smtp.UseDefaultCredentials = false;
-                smtp.Credentials = new System.Net.NetworkCredential("chan37you@gmail.com", "fkttsrlcbrdwriko");
+                smtp.Credentials = new System.Net.NetworkCredential("mr.cheah@live.com", "hnknakezjiakygkp");
                 smtp.EnableSsl = true;
 
                 smtp.Send(mm);
