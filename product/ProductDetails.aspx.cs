@@ -102,7 +102,9 @@ namespace WAD_Assignment_SF.product
         
         protected void btnComment_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/comment/commentList.aspx");
+            //retreive id from URL
+            string productID = Request.QueryString["productID"] ?? "";
+            Response.Redirect("~/comment/comment.aspx?productID=" + productID);
         }
     }
 }

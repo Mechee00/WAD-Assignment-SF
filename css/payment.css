@@ -1,6 +1,5 @@
 ﻿.bg {
-	background: rgb(251,197,120);
-	background: linear-gradient(0deg, rgba(251,197,120,1) 0%, rgba(162,255,98,1) 100%);
+	background: rgb(230, 230, 230);
+	/* background: linear-gradient(0deg, rgba(251,197,120,1) 0%, rgba(162,255,98,1) 100%); */
 	background-size: cover;
 	height: 1000px;
-}

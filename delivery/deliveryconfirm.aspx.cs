@@ -15,20 +15,32 @@ namespace WAD_Assignment_SF.delivery
         string accCs = Global.accCS;
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
             if (!Page.IsPostBack)
             {
-                user usr = (user) Session["user"];
+                user usr = (user)Session["user"];
                 if (usr != null)
                 {
                     litName.Text = usr.accName;
-                    string adr = @"SELECT * from [address] where user_accId = @accId";
+                    string adr = @"SELECT * from [address] where user_accId=@accId";
                     SqlConnection acccon = new SqlConnection(accCs);
                     SqlCommand acccmd = new SqlCommand(adr, acccon);
-                    acccmd.Parameters.AddWithValue("@accId",usr.accID);
+                    acccmd.Parameters.AddWithValue("@accId", usr.accID);
                     acccon.Open();
                     SqlDataReader accdr = acccmd.ExecuteReader();
-                    //litAddress.Text = String.Format(accdr[1] + " " + accdr[2] + ", " + accdr[3] + ", " + (string)accdr[4] + ", " + accdr[5]);
+                    if (accdr.Read())
+                    {
+                        litAddress.Text = String.Format(accdr["addrUnitNumber"].ToString() +
+                            " " + accdr["addrBuildingName"].ToString() + 
+                            ", " + accdr["addrStreet"].ToString() + 
+                            ", " + accdr["addrPostCode"].ToString() + 
+                            ", " + accdr["addrState"].ToString());
+                    }
+                    else
+                    {
+                        Response.Write("Error, no address found");
+
+                    }
                     acccon.Close();
                 }
                 HttpCookie add = Request.Cookies["Address"];
@@ -57,7 +69,7 @@ namespace WAD_Assignment_SF.delivery
             string orderid = Request.QueryString["orderid"] ?? "";
             //Step 3: sql
             string sql = @"INSERT INTO [Delivery] (deliveryDateTime, deliveryStatus, deliveryAddress, deliveryType, orderId) VALUES (@Date, @Status, @Address, @Type, @Id)";
-            
+
 
             //Step 4: establish connection
             SqlConnection con = new SqlConnection(cs);

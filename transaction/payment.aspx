@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="row bg align-items-center" style="height:800px;">
-        <div class="col-auto container bg-white">
+        <div class="col-auto container bg-white round">
             <!-- Title -->
             <div class="row color-dgreen">
                 <h1 class="col" style="font-size: 80px;">
@@ -32,7 +32,7 @@
             </div>
             <div class="row">
                 <h4 class="col">
-                    <asp:TextBox class="col" ID="txtCard" runat="server" Width="530px" placeholder="XXXXXXXXXXXXXXXX" ></asp:TextBox>
+                    <asp:TextBox class="col" ID="txtCard" runat="server" Width="530px" placeholder="XXXXXXXXXXXXXXXX"></asp:TextBox>
                     <asp:RequiredFieldValidator class="col-auto text-danger" ID="CardRequired" runat="server" ErrorMessage="Card Number is required." ToolTip="Card Number is required." ValidationGroup="Payment" ViewStateMode="Inherit" Display="Dynamic" ControlToValidate="txtCard">*</asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator class="col-auto text-danger" ID="InvalidCard" runat="server" ErrorMessage="Invalid Card Number.(16 digit number only)" ControlToValidate="txtCard" ValidationExpression="\d{16}" Display="Dynamic" ValidationGroup="Payment" ToolTip="Invalid Card Number Format (should be 16 digit)">*</asp:RegularExpressionValidator>
                 </h4>
@@ -48,20 +48,14 @@
             </div>
             <div class="row">
                 <h4 class="col-auto">
-                    <asp:TextBox class="col" ID="expiretb" runat="server" placeholder="MM/YY" ></asp:TextBox>
+                    <asp:TextBox class="col" ID="expiretb" runat="server" placeholder="MM/YY"></asp:TextBox>
                     <asp:RequiredFieldValidator class="col-auto text-danger" ID="ExpiryDateRequired" runat="server" ErrorMessage="Expiry Date is required." ToolTip="Expiry Date is required." ValidationGroup="Payment" ControlToValidate="expiretb" Display="Dynamic">*</asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator class="col-auto text-danger" ID="RegularExpressionValidator1" 
-                        runat="server" ErrorMessage="Invalid Expiry Date.(MM/YY)" ControlToValidate="expiretb" 
-                        ValidationGroup="Payment" ValidationExpression="^(0[1-9]|1[0-2])/\d{2}$" Display="Dynamic" 
-                        ToolTip="Invalid Expiry Date Format(/ also required)">*</asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator class="col-auto text-danger" ID="RegularExpressionValidator1" runat="server" ErrorMessage="Invalid Expiry Date.(MM/YY)" ControlToValidate="expiretb" ValidationGroup="Payment" ValidationExpression="^(0[1-9]|1[0-2])/\d{2}$" Display="Dynamic" ToolTip="Invalid Expiry Date Format(/ also required)">*</asp:RegularExpressionValidator>
                 </h4>
                 <h4 class="col-auto ">
-                    <asp:TextBox class="col" ID="cvctb" runat="server" Width="210px" placeholder="XXX" ></asp:TextBox>
+                    <asp:TextBox class="col" ID="cvctb" runat="server" Width="210px" placeholder="XXX"></asp:TextBox>
                     <asp:RequiredFieldValidator class="col-auto text-danger" ID="CVCRequired" runat="server" ErrorMessage="CVC is required." ToolTip="CVC is required." ValidationGroup="Payment" ControlToValidate="cvctb" Display="Dynamic">*</asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator class="col-auto text-danger" ID="RegularExpressionValidator2" 
-                        runat="server" ErrorMessage="Invalid CVC. (3 digit number only)" ControlToValidate="cvctb" 
-                        ValidationExpression="\d{3}" Display="Dynamic" ValidationGroup="Payment" 
-                        ToolTip="Invalid CVC format.">*</asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator class="col-auto text-danger" ID="RegularExpressionValidator2" runat="server" ErrorMessage="Invalid CVC. (3 digit number only)" ControlToValidate="cvctb" ValidationExpression="\d{3}" Display="Dynamic" ValidationGroup="Payment" ToolTip="Invalid CVC format.">*</asp:RegularExpressionValidator>
                 </h4>
             </div>
             <!-- Cardholder Name -->
@@ -96,10 +90,10 @@
             </div>
             <!-- Confirm Payment Button -->
             <br />
-            <div class ="row">
-                <h3 class ="col">
+            <div class="row">
+                <h3 class="col">
                     <asp:Button ID="confirmbtn" class="col-3 btn mx-auto font-bold text-l py-2 mx-2 btn-success" runat="server" Text="Confirm" OnClick="confirmbtn_Click" ValidationGroup="Payment" OnClientClick='return confirm("Please confirm that your credit card details are correct so that your transaction can be proceeded.")' />
-                    <asp:Button ID="cancelbtn" class="col-3 btn mx-auto font-bold text-l py-2 mx-2 btn-warning" runat="server" Text="Cancel"  OnClick="cancelbtn_Click" OnClientClick='return confirm("Are you sure you want to quit payment?")' CausesValidation="False" CommandName="Yes" />
+                    <asp:Button ID="cancelbtn" class="col-3 btn mx-auto font-bold text-l py-2 mx-2 btn-warning" runat="server" Text="Cancel" OnClick="cancelbtn_Click" OnClientClick='return confirm("Are you sure you want to quit payment?")' CausesValidation="False" CommandName="Yes" />
                 </h3>
             </div>
             <br />

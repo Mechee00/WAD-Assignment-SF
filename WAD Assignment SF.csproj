@@ -80,6 +80,9 @@
     <Content Include="App_Data\user_log.ldf">
       <DependentUpon>user.mdf</DependentUpon>
     </Content>
+    <Content Include="comment\addComment.aspx" />
+    <Content Include="comment\comment.aspx" />
+    <Content Include="comment\commentList.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -120,6 +123,8 @@
     <Content Include="help.aspx" />
     <Content Include="home.aspx" />
     <Content Include="product\ProductDetails.aspx" />
+    <Content Include="promotion\addPromotion.aspx" />
+    <Content Include="promotion\promotion.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -202,6 +207,30 @@
     </Compile>
     <Compile Include="CartItem.cs" />
     <Compile Include="CartList.cs" />
+    <Compile Include="comment\addComment.aspx.cs">
+      <DependentUpon>addComment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="comment\addComment.aspx.designer.cs">
+      <DependentUpon>addComment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="comment\comment.aspx.cs">
+      <DependentUpon>comment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="comment\comment.aspx.designer-MSI.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="comment\comment.aspx.designer.cs">
+      <DependentUpon>comment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="comment\commentList.aspx.cs">
+      <DependentUpon>commentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="comment\commentList.aspx.designer.cs">
+      <DependentUpon>commentList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="delivery\delivery.aspx.cs">
       <DependentUpon>delivery.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -288,6 +317,20 @@
     </Compile>
     <Compile Include="product\ProductDetails.aspx.designer.cs">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="promotion\addPromotion.aspx.cs">
+      <DependentUpon>addPromotion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="promotion\addPromotion.aspx.designer.cs">
+      <DependentUpon>addPromotion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="promotion\promotion.aspx.cs">
+      <DependentUpon>promotion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="promotion\promotion.aspx.designer.cs">
+      <DependentUpon>promotion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sell_product\EditProduct.aspx.cs">
