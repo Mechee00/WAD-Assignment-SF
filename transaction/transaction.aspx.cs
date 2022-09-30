@@ -14,7 +14,10 @@ namespace WAD_Assignment_SF.transaction
                 {
                     Response.Redirect("~/ErrorPages/noAuth.aspx");
                 }
-            }            
+            } else
+            {
+                Response.Redirect("~/ErrorPages/noAuth.aspx");
+            }
         }
 
         protected void returnbtn_Click(object sender, EventArgs e)

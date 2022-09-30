@@ -3,6 +3,7 @@
     <link href="../css/global.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div style="height:500px;">
      <div class="row">
         <h1 class="col">
             Error
@@ -16,7 +17,8 @@
     <br />
     <div class="row">
         <div class="col">
-            <asp:Button class="col-2 btn mx-2 font-bold text-l py-2 mx-2 btn-warning" ID="btnreturn" runat="server" Text="Return" OnClick="btnreturn_Click" />
+            <asp:Button class="col-1 btn mx-2 font-bold text-l py-2 mx-2 btn-warning" ID="btnreturn" runat="server" Text="Return" OnClick="btnreturn_Click" />
         </div>
     </div>
+        </div>
 </asp:Content>

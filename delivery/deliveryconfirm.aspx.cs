@@ -28,7 +28,7 @@ namespace WAD_Assignment_SF.delivery
                     acccmd.Parameters.AddWithValue("@accId",usr.accID);
                     acccon.Open();
                     SqlDataReader accdr = acccmd.ExecuteReader();
-                    litAddress.Text = String.Format((string)accdr[1] + " " + (string)accdr[2] + ", " + (string)accdr[3] + ", " + (string)accdr[4] + ", " + (string)accdr[5]);
+                    //litAddress.Text = String.Format(accdr[1] + " " + accdr[2] + ", " + accdr[3] + ", " + (string)accdr[4] + ", " + accdr[5]);
                     acccon.Close();
                 }
                 HttpCookie add = Request.Cookies["Address"];
@@ -69,7 +69,7 @@ namespace WAD_Assignment_SF.delivery
             cmd.Parameters.AddWithValue("@Status", "Pending");
             cmd.Parameters.AddWithValue("@Address", litAddress.Text);
             cmd.Parameters.AddWithValue("@Type", litType.Text);
-            cmd.Parameters.AddWithValue("@Id", orderid);
+            cmd.Parameters.AddWithValue("@Id", int.Parse(orderid));
 
             //Step 6: open connection
             con.Open();
@@ -79,12 +79,12 @@ namespace WAD_Assignment_SF.delivery
 
             //Step 8 : close connection
             con.Close();
-
+            /*
             string sql1 = @"SELECT deliveryID FROM Transaction ORDER BY deliveryID DESC";
             SqlConnection con1 = new SqlConnection(sql1);
             SqlCommand cmd1 = new SqlCommand(sql1, con1);
             con1.Open();
-            int deliveryid = Convert.ToInt32(cmd1.ExecuteScalar().ToString()) + 1;
+            int deliveryid = Convert.ToInt32(cmd1.ExecuteScalar().ToString());
             con1.Close();
             string sql2 = @"UPDATE Order Set deliveryId = @deliveryId WHERE orderId = @orderId";
             SqlConnection con2 = new SqlConnection(sql2);
@@ -94,7 +94,7 @@ namespace WAD_Assignment_SF.delivery
             con1.Open();
             cmd2.ExecuteNonQuery();
             con1.Close();
-
+            */
             Session.Remove("deliType");
             Response.Redirect("~/comment/comment.aspx?orderid=" + orderid);
         }

@@ -19,29 +19,42 @@ namespace WAD_Assignment_SF.sell_product
         {
             if (!IsPostBack)
             {
-                //establish connection
-                SqlConnection con = new SqlConnection(cs);
+                user usr = (user)Session["user"];
+                if (usr != null)
+                {
+                    if (usr.type != "seller")
+                    {
+                        Response.Write("<script>alert('Allow Seller use Only!!');</script>");
+                        Response.Redirect("~/ErrorPages/noAuth.aspx");
+                    }
+                }
+                else
+                {
 
-                //open connection
-                con.Open();
+                    //establish connection
+                    SqlConnection con = new SqlConnection(cs);
 
-                //product
-                string checkProduct = "SELECT count(*) FROM Product";
+                    //open connection
+                    con.Open();
 
-                //sql command
-                SqlCommand cmd = new SqlCommand(checkProduct, con);
+                    //product
+                    string checkProduct = "SELECT count(*) FROM Product";
 
-                //run sql command
-                //NOTE: executeReader() - when multiple fields/records returned
-                //executeScalar() - when only ONE (1) value returned
-                //executeNonQuery() - when we perform CUD
-                int totalProduct = Convert.ToInt32(cmd.ExecuteScalar().ToString());
+                    //sql command
+                    SqlCommand cmd = new SqlCommand(checkProduct, con);
 
-                //assign the total product into the label
-                lblTotalProduct.Text = "Total Item : " + totalProduct.ToString();
+                    //run sql command
+                    //NOTE: executeReader() - when multiple fields/records returned
+                    //executeScalar() - when only ONE (1) value returned
+                    //executeNonQuery() - when we perform CUD
+                    int totalProduct = Convert.ToInt32(cmd.ExecuteScalar().ToString());
 
-                //close connection
-                con.Close();
+                    //assign the total product into the label
+                    lblTotalProduct.Text = "Total Item : " + totalProduct.ToString();
+
+                    //close connection
+                    con.Close();
+                }
             }
         }
 

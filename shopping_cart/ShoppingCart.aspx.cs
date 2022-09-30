@@ -54,7 +54,8 @@ namespace WAD_Assignment_SF.shopping_cart
 
         protected void btnCheckOut_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/delivery/delivery.aspx?grantTotal=" + lblGrantTotal.Text);
+            Session["totalamt"] = lblGrantTotal.Text.ToString();
+            Response.Redirect("~/transaction/payment.aspx");
         }
 
         protected void gvShoppingCart_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)

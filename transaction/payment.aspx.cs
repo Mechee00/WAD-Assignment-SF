@@ -27,8 +27,9 @@ namespace WAD_Assignment_SF.transaction
 
         protected void confirmbtn_Click(object sender, EventArgs e)
         {
-            string orderid = Request.QueryString["orderid"] ?? "";
-            double amount = 0.00;
+            string orderid = "0";// Request.QueryString["orderid"] ?? "";
+            string amtstr = (string)Session["totalamt"];
+            double amount = 0;
             if (Page.IsValid)
             {
                 string delitype = DeliveryTypeRBL.SelectedValue.ToString();
@@ -56,7 +57,7 @@ namespace WAD_Assignment_SF.transaction
                 cmd.Parameters.AddWithValue("@Amount", amount);
                 cmd.Parameters.AddWithValue("@Type", "Online");
                 cmd.Parameters.AddWithValue("@Status", "Pending");
-                cmd.Parameters.AddWithValue("@Id", orderid);
+                cmd.Parameters.AddWithValue("@Id", int.Parse(orderid));
 
                 //Step 6: open connection
                 con.Open();
@@ -66,12 +67,12 @@ namespace WAD_Assignment_SF.transaction
 
                 //Step 8 : close connection
                 con.Close();
-
+                /*
                 string sql1 = @"SELECT transID FROM Transaction ORDER BY transID DESC";
                 SqlConnection con1 = new SqlConnection(sql1);
                 SqlCommand cmd1 = new SqlCommand(sql1, con1);
                 con1.Open();
-                int transid = Convert.ToInt32(cmd1.ExecuteScalar().ToString()) + 1;
+                int transid = Convert.ToInt32(cmd1.ExecuteScalar().ToString());
                 con1.Close();
                 string sql2 = @"UPDATE Order Set transId = @trandId WHERE orderId = @orderId";
                 SqlConnection con2 = new SqlConnection(sql2);
@@ -81,6 +82,7 @@ namespace WAD_Assignment_SF.transaction
                 con1.Open();
                 cmd2.ExecuteNonQuery();
                 con1.Close();
+                */
                 Session["deliType"] = delitype;
 
                 Server.Transfer("~/delivery/deliveryconfirm.aspx?orderid=" + orderid);

@@ -86,7 +86,11 @@
 
             </div>
 
-            <asp:Label ID="lblGrantTotal" runat="server" Text="Label"></asp:Label>
+            <div class="col-5 font-bold text-l border border-secondary text-center my-2">
+                <strong>Total Amount :
+                    <asp:Label ID="lblGrantTotal" runat="server" Text="Label"></asp:Label>
+                </strong> 
+            </div>
 
             <br />
             <div class="row justify-content-center mx-auto" style="height:50px">

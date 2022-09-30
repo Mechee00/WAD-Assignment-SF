@@ -38,7 +38,8 @@ namespace WAD_Assignment_SF.account
                         usr.email = dr["accEmail"].ToString();
                         Session["user"] = usr;
                         Response.Redirect("../home.aspx");
-                    }
+                    } 
+
                 }
             }
         }
@@ -108,9 +109,13 @@ namespace WAD_Assignment_SF.account
                         usr.accID = Convert.ToInt32(dr["accID"]);
                         usr.accName = dr["accUserName"].ToString();
                         Session["user"] = usr;
+                        dr.Close();
+                        con.Close();
+                        Response.Redirect("acc_Update.aspx");
+
                     }
                 }
-                dr.Close();
+                
 
             }
             else
