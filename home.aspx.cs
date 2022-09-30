@@ -9,9 +9,9 @@ namespace WAD_Assignment_SF
 
         }
 
-        protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
+        protected void btnPromotion_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/promotion/promotion.aspx");
         }
     }
 }

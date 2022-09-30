@@ -72,13 +72,13 @@
     <Content Include="account\login.aspx" />
     <Content Include="account\profile_field.ascx" />
     <Content Include="account\signup.aspx" />
-    <Content Include="App_Data\user.mdf" />
-    <Content Include="App_Data\user_log.ldf">
-      <DependentUpon>user.mdf</DependentUpon>
-    </Content>
     <Content Include="App_Data\product.mdf" />
     <Content Include="App_Data\product_log.ldf">
       <DependentUpon>product.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\user.mdf" />
+    <Content Include="App_Data\user_log.ldf">
+      <DependentUpon>user.mdf</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -112,12 +112,17 @@
     <Content Include="Global.asax" />
     <Content Include="help.aspx" />
     <Content Include="home.aspx" />
+    <Content Include="product\ProductDetails.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="sell_product\EditProduct.aspx" />
+    <Content Include="sell_product\InsertProduct.aspx" />
+    <Content Include="sell_product\SellProduct.aspx" />
+    <Content Include="shopping_cart\ShoppingCart.aspx" />
     <Content Include="src\caret-down.svg" />
     <Content Include="src\img\1-Cheese-Stick.jpg" />
     <Content Include="src\img\10-Curry-Chicken-Pie.jpg" />
@@ -184,6 +189,8 @@
     <Compile Include="account\signup.aspx.designer.cs">
       <DependentUpon>signup.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CartItem.cs" />
+    <Compile Include="CartList.cs" />
     <Compile Include="ErrorPages\DefaultErrorPage.aspx.cs">
       <DependentUpon>DefaultErrorPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -215,7 +222,42 @@
     <Compile Include="main.Master.designer.cs">
       <DependentUpon>main.Master</DependentUpon>
     </Compile>
+    <Compile Include="product\ProductDetails.aspx.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="product\ProductDetails.aspx.designer.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sell_product\EditProduct.aspx.cs">
+      <DependentUpon>EditProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sell_product\EditProduct.aspx.designer.cs">
+      <DependentUpon>EditProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sell_product\InsertProduct.aspx.cs">
+      <DependentUpon>InsertProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sell_product\InsertProduct.aspx.designer.cs">
+      <DependentUpon>InsertProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sell_product\SellProduct.aspx.cs">
+      <DependentUpon>SellProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sell_product\SellProduct.aspx.designer.cs">
+      <DependentUpon>SellProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopping_cart\ShoppingCart.aspx.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopping_cart\ShoppingCart.aspx.designer.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="user.cs" />
   </ItemGroup>
   <ItemGroup>
